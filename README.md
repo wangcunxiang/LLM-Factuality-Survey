@@ -17,6 +17,29 @@ TODO: Fix references and hyperlinks.
 |**Hallucinated but Factual**<br>  |1. Outputs that are unfaithful to the prompt but remain factually correct (cao-etal-2022-hallucinated).<br> 2. Outputs that deviate from the prompt's specifics but don't touch on factuality, e.g., a prompt asking for a story about a rabbit and wolf becoming friends, but the LLM produces a tale about a rabbit and a dog befriending each other.<br> 3. Outputs that provide additional factual details not specified in the prompt, e.g., a prompt asking about the capital of France, and the LLM responds with "Paris, which is known for the Eiffel Tower."|
 |**Non-Factual but Non-Hallucinated**<br> |1. Outputs where the LLM states, "I don't know," or avoids a direct answer.<br> 2. Outputs that are partially correct, e.g., for the question, "Who landed on the moon with Apollo 11?" If the LLM responds with just "Neil Armstrong," the answer is incomplete but not hallucinated.<br> 3. Outputs that provide a generalized or vague response without specific details, e.g., for a question about the causes of World War II, the LLM might respond with "It was due to various political and economic factors."|
 
+# Causes
+
+| Category  | Cause  | Example Dialog  | Notes and references |
+| --- | --- | --- | --- |
+|   | Domain knowledge deficit  | Q: CEO of Assicurazioni Generali?  <br> **BloombergGPT:** Philippe Donnet <br> **GPT-NeoX:** Antonio De Lorenzo, Simone Gambarini, Enrico Zanetti  <br> **FLAN-T5-XXL:** John M Forsyth, Christopher K Peters, {empty string} | BloombergGPT is a finance domain-specific language model.[^1] |
+|   | Outdated information  | Q: When was Kyiv attacked by Russia?  <br> **ChatGPT:** As of my last knowledge update in September 2021, Russia had not launched an attack on Kyiv. | Kyiv was attacked by Russia on 25 February 2022.[^2] |
+| Model-level causes | Reasoning error | Q: Who is Tom Cruise’s mother? <br> A: Mary Lee Pfeiffer  <br> Q: Who is Mary Lee Pfeiffer’s son? <br> A: There is no widely known information about... | From [^3]. It is clear that the model knows Tom Cruise’s mother is Lee Pfeiffer, but it fails to reason that Lee Pfeiffer has a son named Tom Cruise. |
+| Retrieval-level causes | Distracted by the retrieval information | **Retrieved context:** "Alan Melikdjanian - Age, Bio, Faces and Birthday".. <br> Q: What is the nationality of the director of Citizen Mavzik? <br> A: (1) The director of the film Citizen Mavzik is Alan Melikdjanian.  (2) Alan Melikdjanian is from Russia.  So, the answer is Russia. | Alan Melikdjanian, known by the alias Captain Disillusion, is a Soviet-born American independent filmmaker and YouTuber[^4]. |
+|   | Misunderstood the retrieval information | **Retrieved context:** "Gerard III, Count of Guelders - Wikipedia"... <br> Q: What is the place of birth of Gerard I, Count Of Guelders's wife?  <br> A: ... the name of Gerard I, Count of Guelders's wife, which is Margaretha of Brabant. | The retrieved context does not provide information about her place of birth which was the original question. The model then incorrectly provides the name of Gerard I, Count of Guelders's wife, Margaretha of Brabant, instead of providing the place of birth.  |
+|   | Fail to address misinformation in retrieved documents | **Retrieved context:** [0] "James Vincent - Death Notice and Service Information - Legacy.com".. <br> Q: When did James Vincent die? <br> A: Based on the information provided in the two articles, James Vincent died on August 9, 2023, in Long Beach, California. | In the presence of contradictory information from retrieved documents, the model should thoroughly outline the response, while also noting the need for clarity.[^5] |
+| Inference-level causes | Snowballing | Q: Was there ever a US senator who represented the state of New Hampshire and whose alma mater was the University of Pennsylvania? <br> A: Yes... His name was John P. Hale | John P. Hale was graduated from Bowdoin College.[^6] |
+|   | Exposure bias | Q: Aamari was very stoic. [PRONOUN] rarely showed any emotion. <br> A: He. | The correct answer was Xe according to [^7]. |
+
+> Examples of different kinds of factual errors produced by large language models. We category the factual error types by the causes of them, whose details can be found in Sec[^8]. 
+
+[^1]: BloombergGPT
+[^2]: Kyiv attack
+[^3]: berglund2023reversal
+[^4]: Captain_disillusion_2018
+[^5]: Misinformation resolve
+[^6]: Snowball
+[^7]: hossain-etal-2023-misgendered
+[^8]: Section reference
 
 # Evaluations 
 
