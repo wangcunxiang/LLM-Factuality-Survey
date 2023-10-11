@@ -3,6 +3,278 @@ The repository for the survey paper "Survey on Factuality in Large Language Mode
 
 ![](survey-tree.jpg)
 
+# Paper List
+
+## Analysis of Factuality
+
+### Knowledge Storage
+1. Language Models as Knowledge Bases?. _Petroni et al._ Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP) 2019. [[paper](https://doi.org/10.18653/v1/D19-1250)]]
+2. Locating and Editing Factual Associations in {GPT}. _Meng et al._ Advances in Neural Information Processing Systems 2022. [[paper](https://openreview.net/forum?id=-h6WAS6eE4)]]
+3. Transformer Feed-Forward Layers Are Key-Value Memories. _Geva et al._ Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing 2021. [[paper](https://doi.org/10.18653/v1/2021.emnlp-main.446)]]
+4. Transformer Feed-Forward Layers Build Predictions by Promoting Concepts in the Vocabulary Space. _Geva et al._ Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing 2022. [[paper](https://aclanthology.org/2022.emnlp-main.3)]]
+5. Dissecting Recall of Factual Associations in Auto-Regressive Language
+Models. _Globerson et al._ CoRR 2023. [[paper](https://arxiv.org/abs/2304.14767)]]
+6. Journey to the Center of the Knowledge Neurons: Discoveries of Language-Independent Knowledge Neurons and Degenerate Knowledge Neurons. _Chen et al._ None 2023. [[paper](https://arxiv.org/abs/2308.13198)]]
+7. A rigorous study of integrated gradients method and extensions to internal neuron attributions. _Lundstrom et al._ International Conference on Machine Learning 2022. [[paper](https://arxiv.org/abs/2202.11912)]]
+
+### Knowledge Awareness
+
+1.  CRITIC: Large Language Models Can Self-Correct with Tool-Interactive Critiquing. _Gou et al._ None 2023. [[paper](https://arxiv.org/abs/2305.11738)]]
+2.  Investigating the Factual Knowledge Boundary of Large Language Models with Retrieval Augmentation. _Ren et al._ None 2023. [[paper](https://arxiv.org/abs/2307.11019)]]
+3.  Do Large Language Models Know What They Don{'}t Know?. _Yin et al._ Findings of the Association for Computational Linguistics: ACL 2023 2023. [[paper](https://doi.org/10.18653/v1/2023.findings-acl.551)]]
+4.  A Survey on In-context Learning. _Dong et al._ None 2023. [[paper](https://arxiv.org/abs/2301.00234)]]
+5.  Language Models (Mostly) Know What They Know. _Kadavath et al._ None 2022. [[paper](https://arxiv.org/abs/2207.05221)]]
+6.   The internal state of an llm knows when its lying. _Azaria et al._ arXiv preprint arXiv:2304.13734 2023. [[paper](https://arxiv.org/abs/2304.13734)]]
+
+
+### Parametric Knowledge vs Retrieved Knowledge
+
+1.  Generate rather than retrieve: Large language models are strong context generators. _Yu et al._ International Conference for Learning Representation (ICLR) 2023. [[paper](https://arxiv.org/abs/2209.10063)]]
+2.  Leveraging Passage Retrieval with Generative Models for Open Domain Question Answering. _Izacard et al._ Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics: Main Volume 2021. [[paper](https://doi.org/10.18653/v1/2021.eacl-main.74)]]
+3.  Large language models struggle to learn long-tail knowledge. _Kandpal et al._ International Conference on Machine Learning 2023. [[paper](https://arxiv.org/abs/2211.08411)]]
+4.  Head-to-Tail: How Knowledgeable are Large Language Models (LLM)? AKA Will LLMs Replace Knowledge Graphs?. _Sun et al._ arXiv preprint arXiv:2308.10168 2023. [[paper](https://arxiv.org/abs/2308.10168)]] 
+
+
+
+### Contextual Influence
+1. Large Language Models with Controllable Working Memory. _Li et al._ Findings of the Association for Computational Linguistics: ACL 2023 2023. [[paper](https://doi.org/10.18653/v1/2023.findings-acl.112)]]
+2.  Context-faithful Prompting for Large Language Models. _Zhou et al._ arXiv preprint arXiv:2303.11315 2023. [[paper](https://arxiv.org/abs/2303.11315)]]
+3.  Benchmarking Large Language Models in Retrieval-Augmented Generation. _Chen et al._ None 2023. [[paper](https://arxiv.org/abs/2309.01431)]]
+4.  Automatic Evaluation of Attribution by Large Language Models. _Yue et al._ arXiv preprint arXiv:2305.06311 2023. [[paper](https://arxiv.org/abs/2305.06311)]]
+
+###  Knowledge Conflicts
+1. Entity-Based Knowledge Conflicts in Question Answering. _Longpre et al._ Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing 2021. [[paper](https://arxiv.org/abs/2109.05052)]]
+2. Rich Knowledge Sources Bring Complex Knowledge Conflicts: Recalibrating Models to Reflect Conflicting Evidence. _Chen et al._ Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing 2022. [[paper](https://arxiv.org/abs/2210.13701)]]
+3. Adaptive Chameleon or Stubborn Sloth: Unraveling the Behavior of Large Language Models in Knowledge Clashes. _Xie et al._ None 2023. [[paper](https://arxiv.org/abs/2305.13300)]]
+4. Large Language Models with Controllable Working Memory. _Li et al._ Findings of the Association for Computational Linguistics: ACL 2023 2023. [[paper](https://doi.org/10.18653/v1/2023.findings-acl.112)]]
+
+## Causes of Factual Errors
+
+### Model-level Causes
+
+#### Forgetting
+
+1. An Empirical Investigation of Catastrophic Forgetting in Gradient-Based Neural Networks. _Goodfellow et al._ None 2015. [[paper](https://arxiv.org/abs/1312.6211)]]
+2. Preserving In-Context Learning ability in Large Language Model Fine-tuning. _Wang et al._ arXiv preprint arXiv:2211.00635 2022. [[paper](https://arxiv.org/abs/2211.00635)]]
+3. Recall and Learn: Fine-tuning Deep Pretrained Language Models with Less Forgetting. _Chen et al._ Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP) 2020. [[paper](https://arxiv.org/abs/2004.12651)]]
+4. Investigating the Catastrophic Forgetting in Multimodal Large Language Models. _Zhai et al._ arXiv preprint arXiv:2309.10313 2023. [[paper](https://arxiv.org/abs/2309.10313)]]
+5. An Empirical Study of Catastrophic Forgetting in Large Language Models During Continual Fine-tuning. _Luo et al._ None 2023. [[paper](https://arxiv.org/abs/2308.08747)]]
+
+#### Reasoning Failure
+7. We're Afraid Language Models Aren't Modeling Ambiguity. _Liu et al._ arXiv preprint arXiv:2304.14399 2023. [[paper](https://arxiv.org/abs/2304.14399)]]
+8. The Reversal Curse: LLMs trained on "A is B" fail to learn "B is A". _Berglund et al._ None 2023. [[paper](https://arxiv.org/abs/2309.12288)]]
+9. Understanding Catastrophic Forgetting in Language Models via Implicit Inference. _Kotha et al._ None 2023. [[paper](https://arxiv.org/abs/2309.10105)]]
+10. Can ChatGPT Replace Traditional KBQA Models? An In-depth Analysis of the Question Answering Performance of the GPT LLM Family. _Tan et al._ None 2023. [[paper](https://arxiv.org/abs/2303.07992)]]
+
+
+### Retrieval-level Causes
+
+#### Misinformation Not Recognized by LLMs
+1. Entity-Based Knowledge Conflicts in Question Answering. _Longpre et al._ Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing 2021. [[paper](https://arxiv.org/abs/2109.05052)]]
+2. On the Risk of Misinformation Pollution with Large Language Models. _Pan et al._ arXiv preprint arXiv:2305.13661 2023. [[paper](https://arxiv.org/abs/2305.13661)]]
+3. A Survey on Truth Discovery. _Han et al._ {SIGKDD} Explor. 2015. [[paper](https://doi.org/10.1145/2897350.2897352)]]
+
+#### Distracting Information
+
+1. SAIL: Search-Augmented Instruction Learning. _Luo et al._ arXiv preprint arXiv:2305.15225 2023. [[paper](https://arxiv.org/abs/2305.15225)]]
+2. Lost in the middle: How language models use long contexts. _Liu et al._ arXiv preprint arXiv:2307.03172 2023. [[paper](https://arxiv.org/abs/2307.03172)]]
+
+#### Misinterpretation of Related Information
+1. ReAct: Synergizing Reasoning and Acting in Language Models. _Yao et al._ None 2023. [[paper](https://arxiv.org/abs/2210.03629)]]
+
+
+### Inference-level Causes
+
+#### Snowballing
+1. How language model hallucinations can snowball. _Zhang et al._ arXiv preprint arXiv:2305.13534 2023. [[paper](https://arxiv.org/abs/2305.13534)]]
+2. A Stitch in Time Saves Nine: Detecting and Mitigating Hallucinations of LLMs by Validating Low-Confidence Generation. _Varshney et al._ None 2023. [[paper](https://arxiv.org/abs/2307.03987)]]
+
+#### Erroneous Decoding
+1. DoLa: Decoding by Contrasting Layers Improves Factuality in Large Language Models. _Chuang et al._ arXiv preprint arXiv:2309.03883 2023. [[paper](https://arxiv.org/abs/2309.03883)]]
+2. How Decoding Strategies Affect the Verifiability of Generated Text. _Massarelli et al._ Findings of the Association for Computational Linguistics: EMNLP 2020 2020. [[paper](https://arxiv.org/abs/1911.03587)]]
+
+#### Exposure Bias
+
+1. WinoQueer: A Community-in-the-Loop Benchmark for Anti-LGBTQ+ Bias in Large Language Models. _Felkner et al._ Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) 2023. [[paper](https://aclanthology.org/2023.acl-long.507/)]]
+2. Bias and Fairness in Large Language Models: A Survey. _Gallegos et al._ arXiv preprint arXiv:2309.00770 2023. [[paper](https://arxiv.org/abs/2309.00770)]]
+3. {MISGENDERED}: Limits of Large Language Models in Understanding Pronouns. _Hossain et al._ Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) 2023. [[paper](https://doi.org/10.18653/v1/2023.acl-long.293)]]
+
+## Evaluation of Factuality
+
+### Benchmarks
+
+1. Measuring Massive Multitask Language Understanding. _Hendrycks et al._ Proceedings of the International Conference on Learning Representations (ICLR) 2021. [[paper](https://arxiv.org/abs/2009.03300)]]
+2. {T}ruthful{QA}: Measuring How Models Mimic Human Falsehoods. _Lin et al._ Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) 2022. [[paper](https://doi.org/10.18653/v1/2022.acl-long.229)]]
+3.  HaluEval: A Large-Scale Hallucination Evaluation Benchmark for Large Language Models. _Li et al._ None 2023. [[paper](https://arxiv.org/abs/2305.11747)]]
+4.  C-Eval: A Multi-Level Multi-Discipline Chinese Evaluation Suite for Foundation Models. _Huang et al._ arXiv preprint arXiv:2305.08322 2023. [[paper](https://arxiv.org/abs/2305.08322)]]
+5. Do Large Language Models Know What They Don{'}t Know?. _Yin et al._ Findings of the Association for Computational Linguistics: ACL 2023 2023. [[paper](https://doi.org/10.18653/v1/2023.findings-acl.551)]]
+6. Do Large Language Models Know about Facts?. _Hu et al._ arXiv preprint arXiv:2310.05177 2023. [[paper](https://arxiv.org/abs/2310.05177)]]
+7. {R}eal{T}ime {QA}: What's the Answer Right Now?. _Kasai et al._ None 2022. [[paper](https://arxiv.org/abs/2207.13332)]]
+8. FreshLLMs: Refreshing Large Language Models with Search Engine Augmentation. _Vu et al._ None 2023. [[paper](https://arxiv.org/abs/2310.03214)]]
+9. FreshLLMs: Refreshing Large Language Models with Search Engine Augmentation. _Vu et al._ None 2023. [[paper](https://arxiv.org/abs/2310.03214)]]
+10. Beyond the Imitation Game: Quantifying and extrapolating the capabilities of language models. _Srivastava et al._ Transactions on Machine Learning Research 2023. [[paper](https://openreview.net/forum?id=uyTL5Bvosj)]]
+12. Natural Questions: a Benchmark for Question Answering Research. _Kwiatkowski et al._ Transactions of the Association of Computational Linguistics 2019. [[paper](https://aclanthology.org/Q19-1026)]]
+13. TriviaQA: A Large Scale Distantly Supervised Challenge Dataset for Reading Comprehension. _Joshi et al._ Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics 2017. [[paper](https://aclanthology.org/P17-1147)]]
+14. Semantic Parsing on {F}reebase from Question-Answer Pairs. _Berant et al._ Proceedings of the 2013 Conference on Empirical Methods in Natural Language Processing 2013. [[paper](https://aclanthology.org/D13-1160)]]
+15. Open Question Answering over Tables and Text. _Chen et al._ None 2021. [[paper](https://arxiv.org/abs/2010.10439)]]
+16. {A}mbig{QA}: Answering Ambiguous Open-domain Questions. _Min et al._ Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP) 2020. [[paper](https://doi.org/10.18653/v1/2020.emnlp-main.466)]]
+17. HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering. _Yang et al._ None 2018. [[paper](https://arxiv.org/abs/1809.09600)]]
+18. Constructing A Multi-hop {QA} Dataset for Comprehensive Evaluation of Reasoning Steps. _Ho et al._ Proceedings of the 28th International Conference on Computational Linguistics 2020. [[paper](https://doi.org/10.18653/v1/2020.coling-main.580)]]
+19. {IIRC}: A Dataset of Incomplete Information Reading Comprehension Questions. _Ferguson et al._ Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP) 2020. [[paper](https://doi.org/10.18653/v1/2020.emnlp-main.86)]]
+20. {M}u{S}i{Q}ue: Multihop Questions via Single-hop Question Composition. _Trivedi et al._ Transactions of the Association for Computational Linguistics 2022. [[paper](https://doi.org/10.1162/tacl_a_00475)]]
+21. {ELI}5: Long Form Question Answering. _Fan et al._ Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics 2019. [[paper](https://doi.org/10.18653/v1/P19-1346)]]
+22. FEVER: a large-scale dataset for Fact Extraction and VERification. _Thorne et al._ None 2018. [[paper](https://arxiv.org/abs/1803.05355)]]
+23. Fool Me Twice: Entailment from {W}ikipedia Gamification. _Eisenschlos et al._ Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies 2021. [[paper](https://doi.org/10.18653/v1/2021.naacl-main.32)]]
+24. {H}o{V}er: A Dataset for Many-Hop Fact Extraction And Claim Verification. _Jiang et al._ Findings of the Association for Computational Linguistics: EMNLP 2020 2020. [[paper](https://doi.org/10.18653/v1/2020.findings-emnlp.309)]]
+25. The Fact Extraction and {VER}ification Over Unstructured and Structured information ({FEVEROUS}) Shared Task. _Aly et al._ Proceedings of the Fourth Workshop on Fact Extraction and VERification (FEVER) 2021. [[paper](https://doi.org/10.18653/v1/2021.fever-1.1)]]
+26. {T}-{RE}x: A Large Scale Alignment of Natural Language with Knowledge Base Triples. _Elsahar et al._ Proceedings of the Eleventh International Conference on Language Resources and Evaluation ({LREC} 2018) 2018. [[paper](https://aclanthology.org/L18-1544)]]
+27. Zero-Shot Relation Extraction via Reading Comprehension. _Levy et al._ Proceedings of the 21st Conference on Computational Natural Language Learning ({C}o{NLL} 2017) 2017. [[paper](https://doi.org/10.18653/v1/K17-1034)]]
+28. Language Models as Knowledge Bases?. _Petroni et al._ Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP) 2019. [[paper](https://doi.org/10.18653/v1/D19-1250)]]
+29. Neural Text Generation from Structured Data with Application to the Biography Domain. _Lebret et al._ Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing 2016. [[paper](https://doi.org/10.18653/v1/D16-1128)]]
+30. \cite{Rose}
+31. {W}iki{A}sp: A Dataset for Multi-domain Aspect-based Summarization. _Hayashi et al._ Transactions of the Association for Computational Linguistics 2021. [[paper](https://doi.org/10.1162/tacl_a_00362)]]
+32. {KILT}: a Benchmark for Knowledge Intensive Language Tasks. _Petroni et al._ Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies 2021. [[paper](https://doi.org/10.18653/v1/2021.naacl-main.200)]]
+33. Scaling Language Models: Methods, Analysis \& Insights from Training Gopher. _Rae et al._ None 2022. [[paper](https://arxiv.org/abs/2112.11446)]]
+34. Curation Corpus Base. _Curation et al._ None 2020. [[paper](https://github.com/CurationCorp/curation-corpus)]]
+35.  Pointer sentinel mixture models. _Merity et al._ arXiv preprint arXiv:1609.07843 2016. [[paper](https://arxiv.org/abs/1609.07843)]]
+36.  The {LAMBADA} dataset: Word prediction requiring a broad discourse context. _Paperno et al._ Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) 2016. [[paper](https://doi.org/10.18653/v1/P16-1144)]]
+37.  Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer. _Raffel et al._ Journal of Machine Learning Research 2020. [[paper](http://jmlr.org/papers/v21/20-074.html)]]
+38.   The Pile: An 800GB Dataset of Diverse Text for Language Modeling. _Gao et al._ None 2020. [[paper](https://arxiv.org/abs/2101.00027)]]
+39.   Wizard of Wikipedia: Knowledge-Powered Conversational agents. _Dinan et al._ None 2019. [[paper](https://arxiv.org/abs/1811.01241)]]
+40. Grounded response generation task at dstc7. _Galley et al._ AAAI Dialog System Technology Challenges Workshop 2019. [[paper](http://workshop.colips.org/dstc7/papers/DSTC7_Task_2_overview_paper.pdf)]]
+41.   "What do others think?": Task-Oriented Conversational Modeling with Subjective Knowledge. _Zhao et al._ None 2023. [[paper](https://arxiv.org/abs/2305.12091)]]
+42.   {R}eal{T}oxicity{P}rompts: Evaluating Neural Toxic Degeneration in Language Models. _Gehman et al._ Findings of the Association for Computational Linguistics: EMNLP 2020 2020. [[paper](https://doi.org/10.18653/v1/2020.findings-emnlp.301)]]
+43.   Hey AI, Can You Solve Complex Tasks by Talking to Agents?. _Khot et al._ None 2022. [[paper](https://arxiv.org/abs/2110.08542)]]
+44.   Did Aristotle Use a Laptop? A Question Answering Benchmark with Implicit Reasoning Strategies. _Geva et al._ Transactions of the Association for Computational Linguistics 2021. [[paper](https://doi.org/10.1162/tacl_a_00370)]]
+45.   TempQuestions: A Benchmark for Temporal Question Answering. _Jia et al._ Companion Proceedings of the The Web Conference 2018 2018. [[paper](https://doi.org/10.1145/3184558.3191536)]]
+46.   {INFOTABS}: Inference on Tables as Semi-structured Data. _Gupta et al._ Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics 2020. [[paper](https://doi.org/10.18653/v1/2020.acl-main.210)]]
+
+### Studies
+1. SelfCheckGPT: Zero-Resource Black-Box Hallucination Detection for Generative Large Language Models. _Manakul et al._ None 2023. [[paper](https://arxiv.org/abs/2303.08896)]]
+2. Evaluating Open Question Answering Evaluation. _Wang et al._ None 2023. [[paper](https://arxiv.org/abs/2305.12421)]]
+3. Measuring and Modifying Factual Knowledge in Large Language Models. _Pezeshkpour et al._ None 2023. [[paper](https://arxiv.org/abs/2306.06264)]]
+4. A Stitch in Time Saves Nine: Detecting and Mitigating Hallucinations of LLMs by Validating Low-Confidence Generation. _Varshney et al._ None 2023. [[paper](https://arxiv.org/abs/2307.03987)]]
+5. FacTool: Factuality Detection in Generative AI -- A Tool Augmented Framework for Multi-Task and Multi-Domain Scenarios. _Chern et al._ None 2023. [[paper](https://arxiv.org/abs/2307.13528)]]
+6. Language Models (Mostly) Know What They Know. _Kadavath et al._ None 2022. [[paper](https://arxiv.org/abs/2207.05221)]]
+7. Generate rather than retrieve: Large language models are strong context generators. _Yu et al._ International Conference for Learning Representation (ICLR) 2023. [[paper](https://arxiv.org/abs/2209.10063)]]
+8. Teaching language models to support answers with verified quotes. _Menick et al._ None 2022. [[paper](https://arxiv.org/abs/2203.11147)]]
+
+### Evaluating Domain-specific Factuality
+
+1. PIXIU: A Large Language Model, Instruction Data and Evaluation Benchmark for Finance. _Xie et al._ arXiv preprint arXiv:2306.05443 2023. [[paper](https://arxiv.org/abs/2306.05443)]]
+2. When flue meets flang: Benchmarks and large pre-trained language model for financial domain. _Shah et al._ arXiv preprint arXiv:2211.00083 2022. [[paper](https://arxiv.org/abs/2211.00083)]]
+3. EcomGPT: Instruction-tuning Large Language Model with Chain-of-Task Tasks for E-commerce. _Li et al._ arXiv preprint arXiv:2308.06966 2023. [[paper](https://arxiv.org/abs/2308.06966)]]
+4. CMB: A Comprehensive Medical Benchmark in Chinese. _Wang et al._ arXiv preprint arXiv:2308.08833 2023. [[paper](https://arxiv.org/abs/2308.08833)]]
+5. Genegpt: Augmenting large language models with domain tools for improved access to biomedical information. _Jin et al._ ArXiv 2023. [[paper](https://arxiv.org/abs/2304.09667)]]
+6. Legalbench: A collaboratively built benchmark for measuring legal reasoning in large language models. _Guha et al._ arXiv preprint arXiv:2308.11462 2023. [[paper](https://arxiv.org/abs/2308.11462)]]
+7. LawBench: Benchmarking Legal Knowledge of Large Language Models. _Fei et al._ arXiv preprint arXiv:2309.16289 2023. [[paper](https://arxiv.org/abs/2309.16289)]]
+
+## Factuality Enhancement
+
+### On Standalone LLM Generation
+
+#### Pretraining-based
+
+##### Initial Pretraining
+
+1. A Multitask, Multilingual, Multimodal Evaluation of ChatGPT on Reasoning, Hallucination, and Interactivity. _Yejin Bang et al._ arXiv 2023. [[paper](https://arxiv.org/abs/2302.04023)]
+2. Deduplicating Training Data Makes Language Models Better. _Lee, Katherine et al._ ACL 2022. [[paper](https://aclanthology.org/2022.acl-long.577)]
+3. Unsupervised Improvement of Factual Knowledge in Language Models. _Sadeq, Nafis et al._ EACL 2023. [[paper](https://aclanthology.org/2023.eacl-main.215.pdf)]
+
+##### Continual Pretraining
+
+1.   Factuality Enhanced Language Models for Open-Ended Text Generation. _Lee, Nayeon et al._ NIPS 2022. [[paper](https://proceedings.neurips.cc/paper_files/paper/2022/file/df438caa36714f69277daa92d608dd63-Paper-Conference.pdf)]
+
+#### Supervised Finetuning
+
+##### Continual SFT
+
+1.   SKILL: Structured Knowledge Infusion for Large Language Models. _Moiseev, Fedor et al._ NAACL 2022. [[paper](https://aclanthology.org/2022.naacl-main.113)]
+2.   Contrastive Learning Reduces Hallucination in Conversations. _Sun, Weiwei et al._ AAAI 2023. [[paper](https://arxiv.org/pdf/2212.10400.pdf)]
+3.   ChatGPT is not Enough: Enhancing Large Language Models with Knowledge Graphs for Fact-aware Language Modeling. _Linyao Yang et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2306.11489.pdf)]
+
+##### Model Editing
+
+1.   Editing Large Language Models: Problems, Methods, and Opportunities. _Yunzhi Yao et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2305.13172.pdf)]
+2.   Knowledge Neurons in Pretrained Transformers. _Dai, Damai et al._ ACL 2022. [[paper](https://aclanthology.org/2022.acl-long.581.pdf)]
+3.   Locating and Editing Factual Associations in GPT. _Kevin Meng et al._ NIPS 2022. [[paper](https://openreview.net/forum?id=-h6WAS6eE4)]
+4.   Editing Factual Knowledge in Language Models. _De Cao, Nicola et al._ EMNLP 2021. [[paper](https://aclanthology.org/2021.emnlp-main.522.pdf)]
+5.   Fast Model Editing at Scale. _Eric Mitchell et al._ ICLR 2022. [[paper](https://openreview.net/forum?id=0DcZxeWfOPt)]
+6.   Inference-Time Intervention: Eliciting Truthful Answers from a Language Model. _Kenneth Li et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2306.03341.pdf)]
+
+#### Multi-Agent
+
+1.   Improving Factuality and Reasoning in Language Models through Multiagent Debate. _Yilun Du et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2305.14325.pdf)]
+2.   LM vs LM: Detecting Factual Errors via Cross Examination. _Roi Cohen et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2305.13281.pdf)]
+
+#### Novel Prompt
+
+1.   Generate Rather than Retrieve: Large Language Models are Strong Context Generators. _Yu, Wenhao et al._  ICLR 2023. [[paper](https://arxiv.org/pdf/2209.10063.pdf)]
+2.   "According to ..." Prompting Language Models Improves Quoting from Pre-Training Data. _Orion Weller et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2305.13252.pdf)]
+3.   Decomposed Prompting: A Modular Approach for Solving Complex Tasks. _Tushar Khot et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2210.02406.pdf)]
+4.   Chain-of-Verification Reduces Hallucination in Large Language Models. _Dhuliawala et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2309.11495.pdf)]
+
+#### Decoding
+
+1.   Factuality Enhanced Language Models for Open-Ended Text Generation. _Lee, Nayeon et al._ NIPS 2022. [[paper]([df438caa36714f69277daa92d608dd63-Paper-Conference.pdf (neurips.cc)](https://proceedings.neurips.cc/paper_files/paper/2022/file/df438caa36714f69277daa92d608dd63-Paper-Conference.pdf))]
+2.   DoLa: Decoding by Contrasting Layers Improves Factuality in Large Language Models. _Chuang, Yung-Sung et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2309.03883.pdf)]
+
+ ### On Retrieval-Augmented Generation
+
+#### Normal RAG Setting
+
+1.   Improving Language Models by Retrieving From Trillions of Tokens. _Sebastian Borgeaud et al._ arXiv 2021. [[paper](https://arxiv.org/pdf/2112.04426.pdf)]
+2.   Internet-Augmented Language Models through Few-Shot Prompting for Open-Domain Question Answering. _Angeliki Lazaridou et al._ arXiv 2022. [[paper](https://arxiv.org/pdf/2203.05115.pdf)]
+
+#### Interactive Retrieval
+
+##### CoT-based Retrieval
+
+1.   Rethinking with Retrieval: Faithful Large Language Model Inference. _Hangfeng He et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2301.00303.pdf)]
+2.   Interleaving Retrieval with Chain-of-Thought Reasoning for Knowledge-Intensive Multi-Step Questions. _Trivedi, Harsh et al._ ACL 2023. [[paper](https://aclanthology.org/2023.acl-long.557.pdf)]
+3.   Active Retrieval Augmented Generation. _Zhengbao Jiang et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2305.06983.pdf)]
+
+##### Agent-based Retrieval
+
+1.   ReAct: Synergizing Reasoning and Acting in Language Models. _Shunyu Yao et al._  arXiv 2023. [[paper](https://arxiv.org/pdf/2210.03629.pdf)]
+2.   Reflexion: Language Agents with Verbal Reinforcement Learning. _Noah Shinn et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2303.11366.pdf)]
+3.   A Stitch in Time Saves Nine: Detecting and Mitigating Hallucinations of LLMs by Validating Low-Confidence Generation. _Neeraj Varshney et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2307.03987.pdf)]
+
+#### Retrieval Adaptation
+
+##### Prompt-based
+
+1.   Check Your Facts and Try Again: Improving Large Language Models with External Knowledge and Automated Feedback. _Baolin Peng et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2302.12813.pdf)]
+
+##### SFT-based
+
+1.   Atlas: Few-shot Learning with Retrieval Augmented Language Models. _Gautier Izacard et al._ arXiv 2022. [[paper](https://arxiv.org/pdf/2208.03299.pdf)]
+2.   REPLUG: Retrieval-Augmented Black-Box Language Models. _Weijia Shi et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2301.12652.pdf)]
+3.   SAIL: Search-Augmented Instruction Learning. _Luo, Hongyin et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2305.15225.pdf)]
+
+##### RLHF-based
+
+1.   Teaching Language Models to Support Answers with Verified Quotes. _Jacob Menick et al._ arXiv 2022. [[paper](https://arxiv.org/pdf/2203.11147.pdf)]
+
+#### Retrieval on External Memory
+
+1.   Decoupled Context Processing for Context Augmented Language Modeling. _Zonglin Li et al._ NIPS 2022. [[paper](https://proceedings.neurips.cc/paper_files/paper/2022/file/882d801fb1017f955547d5a816ade0fc-Paper-Conference.pdf)]
+2.   G-MAP: General Memory-Augmented Pre-trained Language Model for Domain Tasks. _Zhongwei Wan et al._ ICML 2019. [[paper](http://proceedings.mlr.press/v97/houlsby19a/houlsby19a.pdf)]
+3.    Parameter-Efficient Transfer Learning for NLP. _Neil Houlsby et al._ EMNLP 2022. [[paper](https://aclanthology.org/2022.emnlp-main.441.pdf)]
+4.   KALA: Knowledge-Augmented Language Model Adaptation. _Kang, Minki et al._ NAACL 2022. [[paper](https://aclanthology.org/2022.naacl-main.379.pdf)]
+5.   Entities as Experts: Sparse Memory Access with Entity Supervision. _Thibault Févry et al._ EMNLP 2020. [[paper](https://aclanthology.org/2020.emnlp-main.400.pdf)]
+6.   Mention Memory: Incorporating Textual Knowledge into Transformers through Entity Mention Attention. _Michiel de Jong et al._ ICLR 2022. [[paper](https://openreview.net/pdf?id=OY1A8ejQgEX)]
+7.   Plug-and-Play Knowledge Injection for Pre-trained Language Models. _Zhang, Zhengyan et al._ ACL 2023. [[paper](https://aclanthology.org/2023.acl-long.594.pdf)]
+8.   Evidence-based Factual Error Correction. _Thorne, James et al._ ACL 2021. [[paper](https://aclanthology.org/2021.acl-long.256.pdf)]
+9.   Rarr: Researching and revising what language models say, using language models. _Gao, Luyu et al._ ACL 2023. [[paper](https://aclanthology.org/2023.acl-long.910.pdf)]
+10.   PURR: Efficiently Editing Language Model Hallucinations by Denoising Language Model Corruptions. _Chen, Anthony et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2305.14908.pdf)]
+
+#### Retrieval on Structured Knowledge Source
+
+1.   Mitigating Language Model Hallucination with Interactive Question-Knowledge Alignment. _Shuo Zhang et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2305.13669.pdf)]
+2.   StructGPT: A general framework for Large Language Model to Reason on Structured Data. _Jinhao Jiang et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2305.09645.pdf)]
+
+
 # Tables
 
 
@@ -146,109 +418,3 @@ The repository for the survey paper "Survey on Factuality in Large Language Mode
 | [Wen et al, 2023](https://arxiv.org/abs/2307.15290) | Home Renovation | Baichuan-13B | | C-Eval, CMMLU, EvalHome | | ✔️ | | |
 
 
-# Paper List
-
-## Factuality Enhancement
-
-### On Standalone LLM Generation
-
-#### Pretraining-based
-
-##### Initial Pretraining
-
-1. A Multitask, Multilingual, Multimodal Evaluation of ChatGPT on Reasoning, Hallucination, and Interactivity. _Yejin Bang et al._ arXiv 2023. [[paper](https://arxiv.org/abs/2302.04023)]
-2. Deduplicating Training Data Makes Language Models Better. _Lee, Katherine et al._ ACL 2022. [[paper](https://aclanthology.org/2022.acl-long.577)]
-3. Unsupervised Improvement of Factual Knowledge in Language Models. _Sadeq, Nafis et al._ EACL 2023. [[paper](https://aclanthology.org/2023.eacl-main.215.pdf)]
-
-##### Continual Pretraining
-
-1.   Factuality Enhanced Language Models for Open-Ended Text Generation. _Lee, Nayeon et al._ NIPS 2022. [[paper](https://proceedings.neurips.cc/paper_files/paper/2022/file/df438caa36714f69277daa92d608dd63-Paper-Conference.pdf)]
-
-#### Supervised Finetuning
-
-##### Continual SFT
-
-1.   SKILL: Structured Knowledge Infusion for Large Language Models. _Moiseev, Fedor et al._ NAACL 2022. [[paper](https://aclanthology.org/2022.naacl-main.113)]
-2.   Contrastive Learning Reduces Hallucination in Conversations. _Sun, Weiwei et al._ AAAI 2023. [[paper](https://arxiv.org/pdf/2212.10400.pdf)]
-3.   ChatGPT is not Enough: Enhancing Large Language Models with Knowledge Graphs for Fact-aware Language Modeling. _Linyao Yang et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2306.11489.pdf)]
-
-##### Model Editing
-
-1.   Editing Large Language Models: Problems, Methods, and Opportunities. _Yunzhi Yao et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2305.13172.pdf)]
-2.   Knowledge Neurons in Pretrained Transformers. _Dai, Damai et al._ ACL 2022. [[paper](https://aclanthology.org/2022.acl-long.581.pdf)]
-3.   Locating and Editing Factual Associations in GPT. _Kevin Meng et al._ NIPS 2022. [[paper](https://openreview.net/forum?id=-h6WAS6eE4)]
-4.   Editing Factual Knowledge in Language Models. _De Cao, Nicola et al._ EMNLP 2021. [[paper](https://aclanthology.org/2021.emnlp-main.522.pdf)]
-5.   Fast Model Editing at Scale. _Eric Mitchell et al._ ICLR 2022. [[paper](https://openreview.net/forum?id=0DcZxeWfOPt)]
-6.   Inference-Time Intervention: Eliciting Truthful Answers from a Language Model. _Kenneth Li et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2306.03341.pdf)]
-
-#### Multi-Agent
-
-1.   Improving Factuality and Reasoning in Language Models through Multiagent Debate. _Yilun Du et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2305.14325.pdf)]
-2.   LM vs LM: Detecting Factual Errors via Cross Examination. _Roi Cohen et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2305.13281.pdf)]
-
-#### Novel Prompt
-
-1.   Generate Rather than Retrieve: Large Language Models are Strong Context Generators. _Yu, Wenhao et al._  ICLR 2023. [[paper](https://arxiv.org/pdf/2209.10063.pdf)]
-2.   "According to ..." Prompting Language Models Improves Quoting from Pre-Training Data. _Orion Weller et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2305.13252.pdf)]
-3.   Decomposed Prompting: A Modular Approach for Solving Complex Tasks. _Tushar Khot et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2210.02406.pdf)]
-4.   Chain-of-Verification Reduces Hallucination in Large Language Models. _Dhuliawala et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2309.11495.pdf)]
-
-#### Decoding
-
-1.   Factuality Enhanced Language Models for Open-Ended Text Generation. _Lee, Nayeon et al._ NIPS 2022. [[paper]([df438caa36714f69277daa92d608dd63-Paper-Conference.pdf (neurips.cc)](https://proceedings.neurips.cc/paper_files/paper/2022/file/df438caa36714f69277daa92d608dd63-Paper-Conference.pdf))]
-2.   DoLa: Decoding by Contrasting Layers Improves Factuality in Large Language Models. _Chuang, Yung-Sung et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2309.03883.pdf)]
-
- ### On Retrieval-Augmented Generation
-
-#### Normal RAG Setting
-
-1.   Improving Language Models by Retrieving From Trillions of Tokens. _Sebastian Borgeaud et al._ arXiv 2021. [[paper](https://arxiv.org/pdf/2112.04426.pdf)]
-2.   Internet-Augmented Language Models through Few-Shot Prompting for Open-Domain Question Answering. _Angeliki Lazaridou et al._ arXiv 2022. [[paper](https://arxiv.org/pdf/2203.05115.pdf)]
-
-#### Interactive Retrieval
-
-##### CoT-based Retrieval
-
-1.   Rethinking with Retrieval: Faithful Large Language Model Inference. _Hangfeng He et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2301.00303.pdf)]
-2.   Interleaving Retrieval with Chain-of-Thought Reasoning for Knowledge-Intensive Multi-Step Questions. _Trivedi, Harsh et al._ ACL 2023. [[paper](https://aclanthology.org/2023.acl-long.557.pdf)]
-3.   Active Retrieval Augmented Generation. _Zhengbao Jiang et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2305.06983.pdf)]
-
-##### Agent-based Retrieval
-
-1.   ReAct: Synergizing Reasoning and Acting in Language Models. _Shunyu Yao et al._  arXiv 2023. [[paper](https://arxiv.org/pdf/2210.03629.pdf)]
-2.   Reflexion: Language Agents with Verbal Reinforcement Learning. _Noah Shinn et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2303.11366.pdf)]
-3.   A Stitch in Time Saves Nine: Detecting and Mitigating Hallucinations of LLMs by Validating Low-Confidence Generation. _Neeraj Varshney et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2307.03987.pdf)]
-
-#### Retrieval Adaptation
-
-##### Prompt-based
-
-1.   Check Your Facts and Try Again: Improving Large Language Models with External Knowledge and Automated Feedback. _Baolin Peng et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2302.12813.pdf)]
-
-##### SFT-based
-
-1.   Atlas: Few-shot Learning with Retrieval Augmented Language Models. _Gautier Izacard et al._ arXiv 2022. [[paper](https://arxiv.org/pdf/2208.03299.pdf)]
-2.   REPLUG: Retrieval-Augmented Black-Box Language Models. _Weijia Shi et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2301.12652.pdf)]
-3.   SAIL: Search-Augmented Instruction Learning. _Luo, Hongyin et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2305.15225.pdf)]
-
-##### RLHF-based
-
-1.   Teaching Language Models to Support Answers with Verified Quotes. _Jacob Menick et al._ arXiv 2022. [[paper](https://arxiv.org/pdf/2203.11147.pdf)]
-
-#### Retrieval on External Memory
-
-1.   Decoupled Context Processing for Context Augmented Language Modeling. _Zonglin Li et al._ NIPS 2022. [[paper](https://proceedings.neurips.cc/paper_files/paper/2022/file/882d801fb1017f955547d5a816ade0fc-Paper-Conference.pdf)]
-2.   G-MAP: General Memory-Augmented Pre-trained Language Model for Domain Tasks. _Zhongwei Wan et al._ ICML 2019. [[paper](http://proceedings.mlr.press/v97/houlsby19a/houlsby19a.pdf)]
-3.    Parameter-Efficient Transfer Learning for NLP. _Neil Houlsby et al._ EMNLP 2022. [[paper](https://aclanthology.org/2022.emnlp-main.441.pdf)]
-4.   KALA: Knowledge-Augmented Language Model Adaptation. _Kang, Minki et al._ NAACL 2022. [[paper](https://aclanthology.org/2022.naacl-main.379.pdf)]
-5.   Entities as Experts: Sparse Memory Access with Entity Supervision. _Thibault Févry et al._ EMNLP 2020. [[paper](https://aclanthology.org/2020.emnlp-main.400.pdf)]
-6.   Mention Memory: Incorporating Textual Knowledge into Transformers through Entity Mention Attention. _Michiel de Jong et al._ ICLR 2022. [[paper](https://openreview.net/pdf?id=OY1A8ejQgEX)]
-7.   Plug-and-Play Knowledge Injection for Pre-trained Language Models. _Zhang, Zhengyan et al._ ACL 2023. [[paper](https://aclanthology.org/2023.acl-long.594.pdf)]
-8.   Evidence-based Factual Error Correction. _Thorne, James et al._ ACL 2021. [[paper](https://aclanthology.org/2021.acl-long.256.pdf)]
-9.   Rarr: Researching and revising what language models say, using language models. _Gao, Luyu et al._ ACL 2023. [[paper](https://aclanthology.org/2023.acl-long.910.pdf)]
-10.   PURR: Efficiently Editing Language Model Hallucinations by Denoising Language Model Corruptions. _Chen, Anthony et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2305.14908.pdf)]
-
-#### Retrieval on Structured Knowledge Source
-
-1.   Mitigating Language Model Hallucination with Interactive Question-Knowledge Alignment. _Shuo Zhang et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2305.13669.pdf)]
-2.   StructGPT: A general framework for Large Language Model to Reason on Structured Data. _Jinhao Jiang et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2305.09645.pdf)]
