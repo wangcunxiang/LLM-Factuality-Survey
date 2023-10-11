@@ -20,29 +20,16 @@ TODO: Fix references and hyperlinks.
 |**Non-Factual but Non-Hallucinated**<br> |1. Outputs where the LLM states, "I don't know," or avoids a direct answer.<br> 2. Outputs that are partially correct, e.g., for the question, "Who landed on the moon with Apollo 11?" If the LLM responds with just "Neil Armstrong," the answer is incomplete but not hallucinated.<br> 3. Outputs that provide a generalized or vague response without specific details, e.g., for a question about the causes of World War II, the LLM might respond with "It was due to various political and economic factors."|
 
 ## Causes of Factual Errors
-
-| Category  | Cause  | Example Dialog  | Notes and references |
+| Category | Cause | Example Dialog | Notes and references |
 | --- | --- | --- | --- |
-|   | Domain knowledge deficit  | Q: CEO of Assicurazioni Generali?  <br> **BloombergGPT:** Philippe Donnet <br> **GPT-NeoX:** Antonio De Lorenzo, Simone Gambarini, Enrico Zanetti  <br> **FLAN-T5-XXL:** John M Forsyth, Christopher K Peters, {empty string} | BloombergGPT is a finance domain-specific language model.[^1] |
-|   | Outdated information  | Q: When was Kyiv attacked by Russia?  <br> **ChatGPT:** As of my last knowledge update in September 2021, Russia had not launched an attack on Kyiv. | Kyiv was attacked by Russia on 25 February 2022.[^2] |
-| Model-level causes | Reasoning error | Q: Who is Tom Cruise’s mother? <br> A: Mary Lee Pfeiffer  <br> Q: Who is Mary Lee Pfeiffer’s son? <br> A: There is no widely known information about... | From [^3]. It is clear that the model knows Tom Cruise’s mother is Lee Pfeiffer, but it fails to reason that Lee Pfeiffer has a son named Tom Cruise. |
-| Retrieval-level causes | Distracted by the retrieval information | **Retrieved context:** "Alan Melikdjanian - Age, Bio, Faces and Birthday".. <br> Q: What is the nationality of the director of Citizen Mavzik? <br> A: (1) The director of the film Citizen Mavzik is Alan Melikdjanian.  (2) Alan Melikdjanian is from Russia.  So, the answer is Russia. | Alan Melikdjanian, known by the alias Captain Disillusion, is a Soviet-born American independent filmmaker and YouTuber[^4]. |
-|   | Misunderstood the retrieval information | **Retrieved context:** "Gerard III, Count of Guelders - Wikipedia"... <br> Q: What is the place of birth of Gerard I, Count Of Guelders's wife?  <br> A: ... the name of Gerard I, Count of Guelders's wife, which is Margaretha of Brabant. | The retrieved context does not provide information about her place of birth which was the original question. The model then incorrectly provides the name of Gerard I, Count of Guelders's wife, Margaretha of Brabant, instead of providing the place of birth.  |
-|   | Fail to address misinformation in retrieved documents | **Retrieved context:** [0] "James Vincent - Death Notice and Service Information - Legacy.com".. <br> Q: When did James Vincent die? <br> A: Based on the information provided in the two articles, James Vincent died on August 9, 2023, in Long Beach, California. | In the presence of contradictory information from retrieved documents, the model should thoroughly outline the response, while also noting the need for clarity.[^5] |
-| Inference-level causes | Snowballing | Q: Was there ever a US senator who represented the state of New Hampshire and whose alma mater was the University of Pennsylvania? <br> A: Yes... His name was John P. Hale | John P. Hale was graduated from Bowdoin College.[^6] |
-|   | Exposure bias | Q: Aamari was very stoic. [PRONOUN] rarely showed any emotion. <br> A: He. | The correct answer was Xe according to [^7]. |
-
-> Examples of different kinds of factual errors produced by large language models. We category the factual error types by the causes of them, whose details can be found in Sec[^8]. 
-
-[^1]: BloombergGPT
-[^2]: Kyiv attack
-[^3]: berglund2023reversal
-[^4]: Captain_disillusion_2018
-[^5]: Misinformation resolve
-[^6]: Snowball
-[^7]: hossain-etal-2023-misgendered
-[^8]: Section reference
-
+| Model-level causes | Domain knowledge deficit | **Q:** CEO of Assicurazioni Generali? <br> **BloombergGPT:** Philippe Donnet <br> **GPT-NeoX:** Antonio De Lorenzo, Simone Gambarini, Enrico Zanetti <br> **FLAN-T5-XXL:** John M Forsyth, Christopher K Peters, {empty string} | BloombergGPT is a finance domain-specific language model. \cite{BloombergGPT} |
+| | Outdated information | **Q:** When was Kyiv attacked by Russia?<br> **ChatGPT:**As of my last knowledge update in September 2021, Russia had not launched an attack on Kyiv. | Kyiv was attacked by Russia on 25 February 2022. |
+| | Reasoning error | **Q:** Who is Tom Cruise’s mother? <br> **A:** Mary Lee Pfeiffer <br> **Q:** Who is Mary Lee Pfeiffer’s son? <br> **A:** There is no widely known information about... | From \cite{berglund2023reversal}. It is clear that the model knows Tom Cruise’s mother is Lee Pfeiffer, but it fails to reason that Lee Pfeiffer has a son named Tom Cruise. |
+| Retrieval-level causes | Distracted by the retrieval information | **Retrieved context:** "Alan Melikdjanian - Age, Bio, Faces and Birthday"<br> Alan Melikdjanian is the Director, Writer (with his father), Editor, and Composer of the 2006 direct-to-DVD Russian-language film Citizen Mavzik...<br> **Q:** What is the nationality of the director of Citizen Mavzik? <br> **A:** (1) The director of the film Citizen Mavzik is Alan Melikdjanian. (2) Alan Melikdjanian is from Russia. So, the answer is Russia. |  Alan Melikdjanian, known by the alias Captain Disillusion, is a Soviet-born American independent filmmaker and YouTuber. \cite{Captain_disillusion_2018} |
+| | Misunderstood the retrieval information | **Retrieved context:** "Gerard III, Count of Guelders - Wikipedia"<br> Gerard married Margaretha of Brabant...<br> **Q:** Who is Gerard I, Count Of Guelders's wife? <br> **A:** ... the name of Gerard I, Count of Guelders's wife, which is Margaretha of Brabant.| The retrieved context accurately provided the name of Gerard III, Count of Guelders' wife, which is Margaretha of Brabant. However, the model erroneously referred to him as Gerard I, resulting in an incorrect answer. |
+| | Fail to address misinformation in retrieved documents | **Retrieved context:** [0] "James Vincent - Death Notice and Service Information - Legacy.com"<br> James Vincent died on August 9, 2023...<br> [1] "UPDATE: Jury convicts James Vincent of murder after deliberating..." A jury convicted James Vincent of murder in the 2018 Shooting death of Luka Grabb...<br> **Q:** When did James Vincent die? <br> **A:** James Vincent died on August 9, 2023, in Long Beach, California.| In the presence of contradictory information from retrieved documents, the model should thoroughly outline the response, while also noting the need for clarity. For instance, the model could state: "According to the first document, James Vincent passed away on August 9, 2023, in Long Beach. However, the second document suggests that James Vincent was murdered in 2018." |
+| Inference-level causes | Snowballing | **Q:** Was there ever a US senator who represented the state of New Hampshire and whose alma mater was the University of Pennsylvania? <br> **A:** Yes... His name was John P. Hale | John P. Hale was graduated from Bowdoin College. \cite{Snowball} |
+| | Exposure bias | **Q:** Aamari was very stoic. [PRONOUN] rarely showed any emotion. <br> **A:** He. | The correct answer was Xe according to \cite{hossain-etal-2023-misgendered}.
 ## Evaluations 
 
 | Reference | Task | Dataset | Metrics | Human Eval | Evaluated LLMs | Granularity |
@@ -59,21 +46,20 @@ TODO: Fix references and hyperlinks.
 
 | Reference | Task | Dataset | Metrics | Human Eval | Evaluated LLMs | Granularity |
 | --------- | ---- | ------- | ------- | ---------- | -------------- | ----------- |
-| Retro [[borgeaud2022improving]](https://github.com/YTsai28/ltmi) | QA,<br>Language<br>Modeling | MassiveText,<br> Curation Corpus,<br> Wikitext103,<br> Lambada,<br> C4,Pile, NQ | PPL,<br> ACC,<br> Exact Match | ✓ | Retro | T |
-| GenRead [[yu2023generate]](https://github.com/YTsai28/ltmi) | QA,<br> Dialogue,<br> Fact Checking | NQ, TQ, WebQ,<br> FEVER,<br> FM2, WoW | EM, ACC,<br> F1, Rouge-L | - | GPT3.5, Codex<br>GPT-3, Gopher<br>FLAN, GLaM<br>PaLM | S |
-| GopherCite [[menick2022teaching]](https://github.com/YTsai28/ltmi) | Self-supported QA | NQ, ELI5,<br> TruthfulQA<br>(Health, Law, Fiction, Conspiracies) | Human Score | ✓ | GopherCite | S |
-| Trivedi et al. [[trivedi-etal-2023-interleaving]](https://github.com/YTsai28/ltmi) | QA | HotpotQA, IIRC<br>2WikiMultihopQA,<br> MuSiQue(music) | Retrieval recall,<br> Answer F1 | - | GPT-3<br>FLAN-T5 | S/T |
-| Peng et al. [[peng2023check]](https://github.com/YTsai28/ltmi) | QA,<br> Dialogue | DSTC7 track2<br> DSTC11 track5,<br> OTT-QA | ROUGE, chrF,<br> BERTScore, Usefulness,<br> Humanness... | ✓ | ChatGPT | S/T |
-| CRITIC [[gou2023critic]](https://github.com/YTsai28/ltmi) | QA<br>Toxicity Reduction | AmbigNQ, TriviaQA, HotpotQA,<br> RealToxicityPrompts | Exact Match, maximum toxicity,<br> perplexity, n-gram diversity,<br> AUROC..., | - | GPT-3.5<br>ChatGPT | T |
-| Khot et al. [[khot2023decomposed]](https://github.com/YTsai28/ltmi) | QA,<br> long-context QA | CommaQA-E, 2WikiMultihopQA, MuSiQue, HotpotQA | Exact Match, Answer F1 | - | GPT-3<br>FLAN-T5 | T |
-| ReAct [[yao2023react]](https://github.com/YTsai28/ltmi) | QA<br> Fact Verification | HotpotQA, FEVER | Exact Match, ACC | - | PaLM<br>GPT-3 | S/T |
-| Jiang et al. [[jiang2023active]](https://github.com/YTsai28/ltmi) | QA, Commonsense Reasoning,<br> long-form QA... | 2WikiMultihopQA, StrategyQA, ASQA, WikiAsp | Exact Match, Disambig-F1, ROUGE,<br> entity F1... | - | GPT-3.5 | T |
-| Lee et al. [[lee2022factuality]](https://github.com/YTsai28/ltmi) | Open-ended Generation | FEVER | Entity score, Entailment<span>Ratio, ppl... | - | Megatron-LM | T |
-| SAIL [[luo2023sail]](https://github.com/YTsai28/ltmi) | QA<br> Fact Checking | UniLC | ACC<br> F1 | - | LLaMA Vicuna<br>SAIL | T |
-| He et al. [[he2022rethinking]](https://github.com/YTsai28/ltmi) | Commonsense Reasoning, Temporal Reasoning,<br> Tabular Reasoning | StrategyQA, TempQuestions, IN-FOTABS | ACC | - | GPT-3 | T |
-| Pan et al. [[pan-etal-2023-fact]](https://github.com/YTsai28/ltmi) | Fact Checking | HOVER<br> FEVEROUS-S | Macro-F1 | - | Codex<br>FLAN-T5 | S |
-| Multiagent Debate [[multiagent_debate]](https://github.com/YTsai28/ltmi) | Biography<br> MMLU | Unnamed Biography Dataset,<br> MMLU | ChatGPT Evaluator, ACC | - | Bard<br>ChatGPT | S |
-
+| Retro \cite{borgeaud2022improving} | QA,<br>Language<br>Modeling | MassiveText,<br> Curation Corpus,<br> Wikitext103,<br> Lambada,<br> C4,Pile, NQ | PPL,<br> ACC,<br> Exact Match | ✓ | Retro | T |
+| GenRead \cite{yu2023generate} | QA,<br> Dialogue,<br> Fact Checking | NQ, TQ, WebQ,<br> FEVER,<br> FM2, WoW | EM, ACC,<br> F1, Rouge-L | - | GPT3.5, Codex<br>GPT-3, Gopher<br>FLAN, GLaM<br>PaLM | S |
+| GopherCite \cite{menick2022teaching} | Self-supported QA | NQ, ELI5,<br> TruthfulQA<br>(Health, Law, Fiction, Conspiracies) | Human Score | ✓ | GopherCite | S |
+| Trivedi et al. \cite{trivedi-etal-2023-interleaving} | QA | HotpotQA, IIRC<br>2WikiMultihopQA,<br> MuSiQue(music) | Retrieval recall,<br> Answer F1 | - | GPT-3<br>FLAN-T5 | S/T |
+| Peng et al. \cite{peng2023check} | QA,<br> Dialogue | DSTC7 track2<br> DSTC11 track5,<br> OTT-QA | ROUGE, chrF,<br> BERTScore, Usefulness,<br> Humanness... | ✓ | ChatGPT | S/T |
+| CRITIC \cite{gou2023critic} | QA<br>Toxicity Reduction | AmbigNQ, TriviaQA, HotpotQA,<br> RealToxicityPrompts | Exact Match, maximum toxicity,<br> perplexity, n-gram diversity,<br> AUROC..., | - | GPT-3.5<br>ChatGPT | T |
+| Khot et al. \cite{khot2023decomposed} | QA,<br> long-context QA | CommaQA-E, 2WikiMultihopQA, MuSiQue, HotpotQA | Exact Match, Answer F1 | - | GPT-3<br>FLAN-T5 | T |
+| ReAct \cite{yao2023react} | QA<br> Fact Verification | HotpotQA, FEVER | Exact Match, ACC | - | PaLM<br>GPT-3 | S/T |
+| Jiang et al. \cite{jiang2023active} | QA, Commonsense Reasoning,<br> long-form QA... | 2WikiMultihopQA, StrategyQA, ASQA, WikiAsp | Exact Match, Disambig-F1, ROUGE,<br> entity F1... | - | GPT-3.5 | T |
+| Lee et al. \cite{lee2022factuality} | Open-ended Generation | FEVER | Entity score, Entailment<span>Ratio, ppl... | - | Megatron-LM | T |
+| SAIL \cite{luo2023sail} | QA<br> Fact Checking | UniLC | ACC<br> F1 | - | LLaMA Vicuna<br>SAIL | T |
+| He et al. \cite{he2022rethinking} | Commonsense Reasoning, Temporal Reasoning,<br> Tabular Reasoning | StrategyQA, TempQuestions, IN-FOTABS | ACC | - | GPT-3 | T |
+| Pan et al. \cite{pan-etal-2023-fact} | Fact Checking | HOVER<br> FEVEROUS-S | Macro-F1 | - | Codex<br>FLAN-T5 | S |
+| Multiagent Debate \cite{multiagent_debate} | Biography<br> MMLU | Unnamed Biography Dataset,<br> MMLU | ChatGPT Evaluator, ACC | - | Bard<br>ChatGPT | S |
 
 ### Benchmarks
 
@@ -110,57 +96,57 @@ TODO: Fix references and hyperlinks.
 
 ### Enhancement methods
 
-| Reference | Dataset | Metrics | Baselines ➝ Theirs | - | Dataset | Metrics | Baselines ➝ Theirs |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| li2022decoupled | NQ | EM | 34.5 ➝ 44.35 (T5 11B) | - | GSM8K | ACC | 77.0 ➝ 85.0 (ChatGPT) |
-| yu2023generate | NQ | EM | 20.9 ➝ 28.0 (InstructGPT) | - | TriviaQA | EM | 57.5 ➝ 59.0 (InstructGPT) |
-| - | - | - | - | - | WebQA | EM | 18.6 ➝ 24.6 (InstructGPT) |
-| chuangu2023dola | FACTOR News | ACC | 58.3 ➝ 62.0 (LLaMa-7B) | - | FACTOR News | ACC | 61.1 ➝ 62.5 (LLaMa-13B) |
-| - | FACTOR News | ACC | 63.8 ➝ 65.4 (LLaMa-33B) | - | FACTOR News | ACC | 63.6 ➝ 66.2 (LLaMa-65B) |
-| - | FACTOR Wiki  | ACC | 58.6 ➝ 62.2 (LLaMa-7B) | - | FACTOR Wiki  | ACC | 62.6 ➝ 66.2 (LLaMa-13B) |
-| - | FACTOR Wiki  | ACC | 69.5 ➝ 70.3 (LLaMa-33B) | - | FACTOR Wiki  | ACC | 72.2 ➝ 72.4 (LLaMa-65B) |
-| - | TruthfulQA | %Truth * Info | 32.4 ➝ 44.6 (LLaMa-13B) | - | TruthfulQA | %Truth * Info | 34.8 ➝ 49.2 (LLaMa-65B) |
-| li2022contrastive | TruthfulQA | %Truth * Info | 32.4 ➝ 44.4 (LLaMa-13B) | - | TruthfulQA | %Truth * Info | 31.7 ➝ 36.7 (LLaMa-33B) |
-| - | TruthfulQA | %Truth * Info | 34.8 ➝ 43.4 (LLaMa-65B) | - | - | - | - |
-| li2023inferencetime | NQ | ACC | 46.6 ➝ 51.3 (LLaMA-7B) | - | TriviaQA | ACC | 89.6 ➝ 91.1 (LLaMA-7B) |
-| - | MMLU | ACC  | 35.7 ➝ 40.1 (LLaMA-7B) | - | TruthfulQA | %Truth * Info | 32.5 ➝ 65.1 (Alpaca) |
-| - |  TruthfulQA | %Truth * Info | 26.9 ➝ 43.5 (LLaMa-7B) | - |  TruthfulQA | %Truth * Info | 51.5 ➝ 74.0 (Vicuna) |
-| cohen2023lm | LAMA | F1 | 50.7 ➝ 80.8 (ChatGPT) | - | TriviaQA | F1 | 56.2 ➝ 82.6 (ChatGPT) |
-| - | NQ | F1 | 60.6 ➝ 79.1 (ChatGPT) | - | PopQA | F1 | 65.2 ➝ 85.4 (ChatGPT) |
-| - | LAMA | F1 | 42.5 ➝ 79.3 (GPT-3) | - | TriviaQA | F1 | 46.7 ➝ 77.2 (GPT-3) |
-| - | NQ | F1 | 52.0 ➝ 78.0 (GPT-3) | - | PopQA | F1 | 43.7 ➝ 77.4 (GPT-3) |
+| Reference | Dataset | Metrics | Baselines ➝ Theirs | Dataset | Metrics | Baselines ➝ Theirs |
+| --- | --- | --- | --- | --- | --- | --- |
+| \cite{li2022decoupled} | NQ | EM | 34.5 ➝ 44.35 (T5 11B) | GSM8K | ACC | 77.0 ➝ 85.0 (ChatGPT) |
+| \cite{yu2023generate} | NQ | EM | 20.9 ➝ 28.0 (InstructGPT) | TriviaQA | EM | 57.5 ➝ 59.0 (InstructGPT) |
+| - | - | - | - | WebQA | EM | 18.6 ➝ 24.6 (InstructGPT) |
+| \cite{chuangu2023dola} | FACTOR News | ACC | 58.3 ➝ 62.0 (LLaMa-7B) | FACTOR News | ACC | 61.1 ➝ 62.5 (LLaMa-13B) |
+| - | FACTOR News | ACC | 63.8 ➝ 65.4 (LLaMa-33B) | FACTOR News | ACC | 63.6 ➝ 66.2 (LLaMa-65B) |
+| - | FACTOR Wiki  | ACC | 58.6 ➝ 62.2 (LLaMa-7B) | FACTOR Wiki  | ACC | 62.6 ➝ 66.2 (LLaMa-13B) |
+| - | FACTOR Wiki  | ACC | 69.5 ➝ 70.3 (LLaMa-33B) | FACTOR Wiki  | ACC | 72.2 ➝ 72.4 (LLaMa-65B) |
+| - | TruthfulQA | %Truth * Info | 32.4 ➝ 44.6 (LLaMa-13B) | TruthfulQA | %Truth * Info | 34.8 ➝ 49.2 (LLaMa-65B) |
+| \cite{li2022contrastive} | TruthfulQA | %Truth * Info | 32.4 ➝ 44.4 (LLaMa-13B) | TruthfulQA | %Truth * Info | 31.7 ➝ 36.7 (LLaMa-33B) |
+| - | TruthfulQA | %Truth * Info | 34.8 ➝ 43.4 (LLaMa-65B) | - | - | - |
+| \cite{li2023inferencetime} | NQ | ACC | 46.6 ➝ 51.3 (LLaMA-7B) | TriviaQA | ACC | 89.6 ➝ 91.1 (LLaMA-7B) |
+| - | MMLU | ACC  | 35.7 ➝ 40.1 (LLaMA-7B) | TruthfulQA | %Truth * Info | 32.5 ➝ 65.1 (Alpaca) |
+| - |  TruthfulQA | %Truth * Info | 26.9 ➝ 43.5 (LLaMa-7B) |  TruthfulQA | %Truth * Info | 51.5 ➝ 74.0 (Vicuna) |
+| \cite{cohen2023lm} | LAMA | F1 | 50.7 ➝ 80.8 (ChatGPT) | TriviaQA | F1 | 56.2 ➝ 82.6 (ChatGPT) |
+| - | NQ | F1 | 60.6 ➝ 79.1 (ChatGPT) | PopQA | F1 | 65.2 ➝ 85.4 (ChatGPT) |
+| - | LAMA | F1 | 42.5 ➝ 79.3 (GPT-3) | TriviaQA | F1 | 46.7 ➝ 77.2 (GPT-3) |
+| - | NQ | F1 | 52.0 ➝ 78.0 (GPT-3) | PopQA | F1 | 43.7 ➝ 77.4 (GPT-3) |
 |...|
 
 ### Domain-enhanced LLMs
 
-|Reference|Domain|Model|Eval Task|Eval Dataset|Continual Pretrained?|Continual SFT?|Train From Scratch?|External knowledge|
-|---|---|---|---|---|---|---|---|---|
-|[Zhang et al. 2023](#)|H|Baichuan-7B, Ziya-LLaMA-13B|QA|cMedQA2, WebMedQA, Huatuo-26M|✓||||
-|[Yang et al. 2023](#)|H|Ziya-LLaMA-13B|QA|CMtMedQA, huatuo-26M|✓|✓|||
-|[Wang et al. 2023](#)|H|GPT-3.5-Turbo, LLaMA-2-13B|QA|MedQAUSMLE, MedQAMCMLE, MedMCQA|||✓|
-|[Ross et al. 2022](#)|H|MOLFORMER|Molecule properties prediction|||✓||
-|[Bao et al. 2023](#)|H|Baichuan-13B|QA|CMB-Clin, CMD, CMID|✓||||
-|[Guan et al. 2023](#)|H|ChatGPT|IU-RR, MIMIC-CXR|||✓||
-|[Liu et al. 2023](#)|H|GPT-4|Medical Text De-Identification|||✓||
-|[Li et al. 2023](#)|H|LLaMA|QA||✓|||
-|[Venigalla et al. 2022](#)|H|GPT (2.7b)|QA|||✓||
-|[Xiong et al. 2023](#)|H|ChatGLM-6B|QA|||✓||
-|[Tan et al. 2023](#)|H|Baichuan-7B|QA|C-Eval, MMLU||✓|
-|[Luo et al. 2022](#)|H|GPT-2|QA, DC, RE|||✓||
-|[Jin et al. 2023](#)|H|Codex|QA|GeneTuring|||✓|
-|[Hiesinger et al. 2023](#)|H|text-davinci-003|QA|ClinicalQA|||✓|
-|[Liu et al. 2023](#)|H|GPT-2medium|Molecular Property Prediction, Molecule-text translation|✓|✓||
-|[Nguyen et al. 2023](#)|L|GPT3||||✓||
-|[Savelka et al. 2023](#)|L|GPT-4|||✓|✓|
-|[Huang et al. 2023](#)|L|LLaMA|CN Legal Tasks|✓|✓|||
-|[Cui et al. 2023](#)|L|Ziya-LLaMA-13B|QA|national judicial examination question|✓|||✓|
-|[Li et al. 2023](#)|F|BLOOMZ|4 major tasks 12 subtasks|EcomInstruct|||✓|
-|[Bloomberg GPT](#)|F|BLOOM|Financial NLP (SA, BC, NER, NER+NED, QA)|FinancialDatasets|||✓|
-|[Deng et al. 2023](#)|G|LLaMA-7B||GeoBench|✓||||
-|[Bai et al. 2023](#)|G|chatglm-6b|||✓||||
-|[Fan et al. 2023](#)|E|phoenix-inst-chat-7b|Chinese Grammatical Error Correction|ChatGPT-generated, Human-annotated||✓||
-|[Qi et al. 2023](#)|FT|Chinese-LLaMA2-13B|QA||✓|||✓|
-|[Wen et al. 2023](#)|HR|Baichuan-13B||C-Eval, CMMLU, EvalHome ||✓|||
+| Reference | Domain | Model | Eval Task | Eval Dataset | Continual Pretrained? | Continual SFT? | Train From Scratch? | External Knowledge |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| \cite{zhang2023huatuogpt} | Healthcare | Baichuan-7B, Ziya-LLaMA-13B | QA | cMedQA2, WebMedQA, Huatuo-26M | ✔️ | | | |
+| \cite{yang2023zhongjing} | Healthcare | Ziya-LLaMA-13B | QA | CMtMedQA, huatuo-26M | ✔️ | ✔️ | | |
+| \cite{wang2023augmenting} | Healthcare | GPT-3.5-Turbo, LLaMA-2-13B | QA | MedQAUSMLE, MedQAMCMLE, MedMCQA | | | | ✔️ |
+| \cite{ross2022large} | Healthcare | MOLFORMER | Molecule properties prediction | | | | ✔️ | |
+| \cite{bao2023disc} | Healthcare | Baichuan-13B | QA | CMB-Clin, CMD, CMID | | ✔️ | | |
+| \cite{guan2023cohortgpt} | Healthcare | ChatGPT | IU-RR, MIMIC-CXR | | | | | ✔️ |
+| \cite{liu2023deid} | Healthcare | GPT-4 | Medical Text De-Identification | | | | | ✔️ |
+| \cite{li2023chatdoctor} | Healthcare | LLaMA | QA | | | ✔️ | | |
+| \cite{venigalla2022biomedlm} | Healthcare | GPT (2.7b) | QA |  | | | ✔️ | |
+| \cite{xiong2023doctorglm} | Healthcare | ChatGLM-6B | QA | | | ✔️ | | |
+| \cite{tan2023medchatzh} | Healthcare | Baichuan-7B | QA | C-Eval, MMLU | | ✔️ | | |
+| \cite{luo2022biogpt} | Healthcare | GPT-2 | QA, DC, RE | | | | ✔️ | |
+| \cite{jin2023genegpt} | Healthcare | Codex | QA | GeneTuring | | | | ✔️ |
+| \cite{hiesinger2023almanac} | Healthcare | text-davinci-003 | QA | ClinicalQA | | | | ✔️ |
+| \cite{liu2023molxpt} | Healthcare | GPT-2medium | Molecular Property Prediction, Molecule-text translation | | | ✔️ | ✔️ | |
+| \cite{nguyen2023brief} | Law | GPT3 | | | | ✔️ | | |
+| \cite{savelka2023explaining} | Law | GPT-4 | | | | | | ✔️ |
+| \cite{huang2023lawyer} | Law | LLaMA | CN Legal Tasks | | ✔️ | ✔️ | | |
+| \cite{cui2023chatlaw} | Law | Ziya-LLaMA-13B | QA | national judicial examination question | ✔️ | | | ✔️ |
+| \cite{li2023ecomgpt} | Finance | BLOOMZ | 4 major tasks 12 subtasks | EcomInstruct | | ✔️ | | |
+| \cite{BloombergGPT} | Finance | BLOOM | Financial NLP (SA, BC, NER, NER+NED, QA) | Financial Datasets | | | ✔️ | |
+| \cite{deng2023learning} | Geoscience | LLaMA-7B | | GeoBench | ✔️ | | | |
+| \cite{bai2023houyi} | Geoscience | ChatGLM-6B | | | ✔️ | | | |
+| \cite{fan2023grammargpt} | E | phoenix-inst-chat-7b | Chinese Grammatical Error Correction | ChatGPT-generated, Human-annotated | | ✔️ | | |
+| \cite{qi2023foodgpt} | Food | Chinese-LLaMA2-13B | QA | | ✔️ | | | ✔️ |
+| \cite{wen2023chathome} | Home Renovation | Baichuan-13B | | C-Eval, CMMLU, EvalHome | | ✔️ | | |
 
 
 # Paper List
