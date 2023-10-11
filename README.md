@@ -4,6 +4,8 @@ The repository for the survey paper "Large Language Models Factuality Survey - K
 
 TODO: Fix references and hyperlinks.
 
+![](survey-tree.jpg)
+
 # Factuality and Hallucination
 
 
