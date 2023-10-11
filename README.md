@@ -278,7 +278,6 @@ Models. _Globerson et al._ 2023. [[Paper](https://arxiv.org/abs/2304.14767)]
 1. Zero-Shot Relation Extraction via Reading Comprehension. _Levy et al._ 2017. [[Paper](https://doi.org/10.18653/v1/K17-1034)]
 1. Language Models as Knowledge Bases?. _Petroni et al._ 2019. [[Paper](https://doi.org/10.18653/v1/D19-1250)]
 1. Neural Text Generation from Structured Data with Application to the Biography Domain. _Lebret et al._ 2016. [[Paper](https://doi.org/10.18653/v1/D16-1128)]
-1. \cite{Rose}
 1. WikiAsp: A Dataset for Multi-domain Aspect-based Summarization. _Hayashi et al._ 2021. [[Paper](https://doi.org/10.1162/tacl_a_00362)]
 1. KILT: a Benchmark for Knowledge Intensive Language Tasks. _Petroni et al._ 2021. [[Paper](https://doi.org/10.18653/v1/2021.naacl-main.200)]
 1. Scaling Language Models: Methods, Analysis \& Insights from Training Gopher. _Rae et al._ 2022. [[Paper](https://arxiv.org/abs/2112.11446)]
