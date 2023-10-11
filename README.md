@@ -103,3 +103,59 @@ TODO: Fix references and hyperlinks.
 | \cite{jin2023genegpt} | Medicine | Nomenclature,<br/> Genomic location,<br/> Functional analysis,<br/> Sequence alignment | GeneTuring | Acc | GPT-2, BioGPT, <br/> BioMedLM, <br/> GPT-3, <br/> ChatGPT, New Bing|
 | \cite{guha2023legalbench} | Law | Issue-spotting,<br/> Rule-recall,<br/> Rule-application,<br/> Rule-conclusion,<br/> Interpretation,<br/> Rhetorical-understanding | LegalBench | Acc, EM | GPT-4, GPT-3.5, <br/> Claude-1, Incite, OPT<br/> Falcon, LLaMA-2, FLAN-T5...|
 | \cite{fei2023lawbench} | Law | Legal QA, NER, <br/> Sentiment Analysis,<br/> Reading Comprehension | LawBench | F1, Acc,<br/> ROUGE-L,<br/> Normalized log-distance... | GPT-4,<br/> ChatGPT, <br/> InternLM-Chat,<br/> StableBeluga2...|
+
+# Enhancement
+
+## Enhancement methods
+
+| Reference | Dataset | Metrics | Baselines ➝ Theirs | - | Dataset | Metrics | Baselines ➝ Theirs |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| li2022decoupled | NQ | EM | 34.5 ➝ 44.35 (T5 11B) | - | GSM8K | ACC | 77.0 ➝ 85.0 (ChatGPT) |
+| yu2023generate | NQ | EM | 20.9 ➝ 28.0 (InstructGPT) | - | TriviaQA | EM | 57.5 ➝ 59.0 (InstructGPT) |
+| - | - | - | - | - | WebQA | EM | 18.6 ➝ 24.6 (InstructGPT) |
+| chuangu2023dola | FACTOR News | ACC | 58.3 ➝ 62.0 (LLaMa-7B) | - | FACTOR News | ACC | 61.1 ➝ 62.5 (LLaMa-13B) |
+| - | FACTOR News | ACC | 63.8 ➝ 65.4 (LLaMa-33B) | - | FACTOR News | ACC | 63.6 ➝ 66.2 (LLaMa-65B) |
+| - | FACTOR Wiki  | ACC | 58.6 ➝ 62.2 (LLaMa-7B) | - | FACTOR Wiki  | ACC | 62.6 ➝ 66.2 (LLaMa-13B) |
+| - | FACTOR Wiki  | ACC | 69.5 ➝ 70.3 (LLaMa-33B) | - | FACTOR Wiki  | ACC | 72.2 ➝ 72.4 (LLaMa-65B) |
+| - | TruthfulQA | %Truth * Info | 32.4 ➝ 44.6 (LLaMa-13B) | - | TruthfulQA | %Truth * Info | 34.8 ➝ 49.2 (LLaMa-65B) |
+| li2022contrastive | TruthfulQA | %Truth * Info | 32.4 ➝ 44.4 (LLaMa-13B) | - | TruthfulQA | %Truth * Info | 31.7 ➝ 36.7 (LLaMa-33B) |
+| - | TruthfulQA | %Truth * Info | 34.8 ➝ 43.4 (LLaMa-65B) | - | - | - | - |
+| li2023inferencetime | NQ | ACC | 46.6 ➝ 51.3 (LLaMA-7B) | - | TriviaQA | ACC | 89.6 ➝ 91.1 (LLaMA-7B) |
+| - | MMLU | ACC  | 35.7 ➝ 40.1 (LLaMA-7B) | - | TruthfulQA | %Truth * Info | 32.5 ➝ 65.1 (Alpaca) |
+| - |  TruthfulQA | %Truth * Info | 26.9 ➝ 43.5 (LLaMa-7B) | - |  TruthfulQA | %Truth * Info | 51.5 ➝ 74.0 (Vicuna) |
+| cohen2023lm | LAMA | F1 | 50.7 ➝ 80.8 (ChatGPT) | - | TriviaQA | F1 | 56.2 ➝ 82.6 (ChatGPT) |
+| - | NQ | F1 | 60.6 ➝ 79.1 (ChatGPT) | - | PopQA | F1 | 65.2 ➝ 85.4 (ChatGPT) |
+| - | LAMA | F1 | 42.5 ➝ 79.3 (GPT-3) | - | TriviaQA | F1 | 46.7 ➝ 77.2 (GPT-3) |
+| - | NQ | F1 | 52.0 ➝ 78.0 (GPT-3) | - | PopQA | F1 | 43.7 ➝ 77.4 (GPT-3) |
+|...|
+
+## Domain-enhanced LLMs
+
+|Reference|Domain|Model|Eval Task|Eval Dataset|Continual Pretrained?|Continual SFT?|Train From Scratch?|External knowledge|
+|---|---|---|---|---|---|---|---|---|
+|[Zhang et al. 2023](#)|H|Baichuan-7B, Ziya-LLaMA-13B|QA|cMedQA2, WebMedQA, Huatuo-26M|✓||||
+|[Yang et al. 2023](#)|H|Ziya-LLaMA-13B|QA|CMtMedQA, huatuo-26M|✓|✓|||
+|[Wang et al. 2023](#)|H|GPT-3.5-Turbo, LLaMA-2-13B|QA|MedQAUSMLE, MedQAMCMLE, MedMCQA|||✓|
+|[Ross et al. 2022](#)|H|MOLFORMER|Molecule properties prediction|||✓||
+|[Bao et al. 2023](#)|H|Baichuan-13B|QA|CMB-Clin, CMD, CMID|✓||||
+|[Guan et al. 2023](#)|H|ChatGPT|IU-RR, MIMIC-CXR|||✓||
+|[Liu et al. 2023](#)|H|GPT-4|Medical Text De-Identification|||✓||
+|[Li et al. 2023](#)|H|LLaMA|QA||✓|||
+|[Venigalla et al. 2022](#)|H|GPT (2.7b)|QA|||✓||
+|[Xiong et al. 2023](#)|H|ChatGLM-6B|QA|||✓||
+|[Tan et al. 2023](#)|H|Baichuan-7B|QA|C-Eval, MMLU||✓|
+|[Luo et al. 2022](#)|H|GPT-2|QA, DC, RE|||✓||
+|[Jin et al. 2023](#)|H|Codex|QA|GeneTuring|||✓|
+|[Hiesinger et al. 2023](#)|H|text-davinci-003|QA|ClinicalQA|||✓|
+|[Liu et al. 2023](#)|H|GPT-2medium|Molecular Property Prediction, Molecule-text translation|✓|✓||
+|[Nguyen et al. 2023](#)|L|GPT3||||✓||
+|[Savelka et al. 2023](#)|L|GPT-4|||✓|✓|
+|[Huang et al. 2023](#)|L|LLaMA|CN Legal Tasks|✓|✓|||
+|[Cui et al. 2023](#)|L|Ziya-LLaMA-13B|QA|national judicial examination question|✓|||✓|
+|[Li et al. 2023](#)|F|BLOOMZ|4 major tasks 12 subtasks|EcomInstruct|||✓|
+|[Bloomberg GPT](#)|F|BLOOM|Financial NLP (SA, BC, NER, NER+NED, QA)|FinancialDatasets|||✓|
+|[Deng et al. 2023](#)|G|LLaMA-7B||GeoBench|✓||||
+|[Bai et al. 2023](#)|G|chatglm-6b|||✓||||
+|[Fan et al. 2023](#)|E|phoenix-inst-chat-7b|Chinese Grammatical Error Correction|ChatGPT-generated, Human-annotated||✓||
+|[Qi et al. 2023](#)|FT|Chinese-LLaMA2-13B|QA||✓|||✓|
+|[Wen et al. 2023](#)|HR|Baichuan-13B||C-Eval, CMMLU, EvalHome ||✓|||
