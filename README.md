@@ -5,7 +5,7 @@ The repository for the survey paper "[**Survey on Factuality in Large Language M
 ![](logo.jpg)
 
 <p align="center">
-Cunxiang Wang<sup>1,7</sup>*, Xiaoze Liu<sup>2</sup>*, Yuanhao Yue<sup>3</sup>*, Xiangru Tang<sup>4</sup>, Tianhang Zhang<sup>5</sup>, Cheng Jiayang<sup>6</sup>, Yunzhi Yao<sup>7</sup>, Wenyang Gao<sup>1,7</sup>,<br>Xuming Hu<sup>8</sup>, Zehan Qi<sup>8</sup>, Yidong Wang<sup>1</sup>, Linyi Yang<sup>1</sup>, Jindong Wang<sup>9</sup>, Xing Xie<sup>9</sup>, Zheng Zhang<sup>10</sup> and Yue Zhang<sup>1</sup>.
+Cunxiang Wang<sup>1,7</sup>*, Xiaoze Liu<sup>2</sup>*, Yuanhao Yue<sup>3</sup>*, Xiangru Tang<sup>4</sup>, Tianhang Zhang<sup>5</sup>, Cheng Jiayang<sup>6</sup>, Yunzhi Yao<sup>7</sup>, Wenyang Gao<sup>1,7</sup>, Xuming Hu<sup>8</sup>, Zehan Qi<sup>8</sup>, Yidong Wang<sup>1</sup>, Linyi Yang<sup>1</sup>, Jindong Wang<sup>9</sup>, Xing Xie<sup>9</sup>, Zheng Zhang<sup>10</sup> and Yue Zhang<sup>1</sup>.
 </p> 
 
 <p align="center">
