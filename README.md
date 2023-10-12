@@ -37,6 +37,7 @@ Models. _Globerson et al._ 2023. [[Paper](https://arxiv.org/abs/2304.14767)]
 ### Parametric Knowledge vs Retrieved Knowledge
 
 1.  Generate rather than retrieve: Large language models are strong context generators. _Yu et al._ 2023. [[Paper](https://arxiv.org/abs/2209.10063)]
+1.  Beyond Factuality: A Comprehensive Evaluation of Large Language Models as Knowledge Generators. _Chen et al._ 2023. [[Paper](https://arxiv.org/abs/2310.07289)]
 1.  Leveraging Passage Retrieval with Generative Models for Open Domain Question Answering. _Izacard et al._ 2021. [[Paper](https://doi.org/10.18653/v1/2021.eacl-main.74)]
 1.  Large language models struggle to learn long-tail knowledge. _Kandpal et al._ 2023. [[Paper](https://arxiv.org/abs/2211.08411)]
 1.  Head-to-Tail: How Knowledgeable are Large Language Models (LLM)? AKA Will LLMs Replace Knowledge Graphs?. _Sun et al._ 2023. [[Paper](https://arxiv.org/abs/2308.10168)] 
@@ -162,6 +163,7 @@ Models. _Globerson et al._ 2023. [[Paper](https://arxiv.org/abs/2304.14767)]
 1. FacTool: Factuality Detection in Generative AI -- A Tool Augmented Framework for Multi-Task and Multi-Domain Scenarios. _Chern et al._ 2023. [[Paper](https://arxiv.org/abs/2307.13528)]
 1. Language Models (Mostly) Know What They Know. _Kadavath et al._ 2022. [[Paper](https://arxiv.org/abs/2207.05221)]
 1. Generate rather than retrieve: Large language models are strong context generators. _Yu et al._ 2023. [[Paper](https://arxiv.org/abs/2209.10063)]
+1. Beyond Factuality: A Comprehensive Evaluation of Large Language Models as Knowledge Generators. _Chen et al._ 2023. [[Paper](https://arxiv.org/abs/2310.07289)]
 1. Teaching language models to support answers with verified quotes. _Menick et al._ 2022. [[Paper](https://arxiv.org/abs/2203.11147)]
 
 ### Evaluating Domain-specific Factuality
