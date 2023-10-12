@@ -1,5 +1,5 @@
 # LLM-Factuality-Survey
-The repository for the survey paper "[**Survey on Factuality in Large Language Models: Knowledge, Retrieval and Domain-Specificity**](https://arxiv.org/pdf/2305.12421.pdf)"
+The repository for the survey paper "[**Survey on Factuality in Large Language Models: Knowledge, Retrieval and Domain-Specificity**](https://arxiv.org/abs/2310.07521)"
 
 
 ![](logo.jpg)
