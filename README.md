@@ -465,7 +465,7 @@ Models. _Globerson et al._ 2023. [[Paper](https://arxiv.org/abs/2304.14767)]
 
 1.   FoodGPT: A Large Language Model in Food Testing Domain with Incremental Pre-training and Knowledge Graph Prompt. _Qi, Zhixiao et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2308.10173.pdf)]
 
-##### Home renovation domain-enhanced LLMs
+##### Home Renovation Domain-enhanced LLMs
 
 1.   ChatHome: Development and Evaluation of a Domain-Specific Language Model for Home Renovation. _Wen, Cheng et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2307.15290.pdf)]
 
