@@ -2,13 +2,14 @@
 The repository for the survey paper "**Survey on Factuality in Large Language Models: Knowledge, Retrieval and Domain-Specificity**"
 
 
+![](logo.jpg)
+
+[[Tables](https://github.com/wangcunxiang/LLM-Factuality-Survey#tables)]
+[[Paper list](https://github.com/wangcunxiang/LLM-Factuality-Survey#paper-list)]
 
 
 ![](survey-tree.jpg)
 
-
-[[Tables](https://github.com/wangcunxiang/LLM-Factuality-Survey#tables)]
-[[Paper list](https://github.com/wangcunxiang/LLM-Factuality-Survey#paper-list)]
 
 # Tables
 *Table: Comparison between the factuality issue and the hallucination issue.*
