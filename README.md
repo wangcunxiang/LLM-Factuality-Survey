@@ -145,7 +145,7 @@ The repository for the survey paper "**Survey on Factuality in Large Language Mo
 | [Wu et al, 2023](https://arxiv.org/abs/2303.17564) | Finance | BLOOM | Financial NLP (SA, BC, NER, NER+NED, QA) | Financial Datasets | | | ✔️ | |
 | [Deng et al, 2023](https://arxiv.org/abs/2306.05064) | Geoscience | LLaMA-7B | | GeoBench | ✔️ | | | |
 | [Bai et al, 2023](https://arxiv.org/abs/2308.01414) | Geoscience | ChatGLM-6B | | | ✔️ | | | |
-| [Fan et al, 2023](https://arxiv.org/abs/2307.13923) | E | phoenix-inst-chat-7b | Chinese Grammatical Error Correction | ChatGPT-generated, Human-annotated | | ✔️ | | |
+| [Fan et al, 2023](https://arxiv.org/abs/2307.13923) | Education | phoenix-inst-chat-7b | Chinese Grammatical Error Correction | ChatGPT-generated, Human-annotated | | ✔️ | | |
 | [Qi et al, 2023](https://arxiv.org/abs/2308.10173) | Food | Chinese-LLaMA2-13B | QA | | ✔️ | | | ✔️ |
 | [Wen et al, 2023](https://arxiv.org/abs/2307.15290) | Home Renovation | Baichuan-13B | | C-Eval, CMMLU, EvalHome | | ✔️ | | |
 
