@@ -420,3 +420,52 @@ Models. _Globerson et al._ 2023. [[Paper](https://arxiv.org/abs/2304.14767)]
 1.   Mitigating Language Model Hallucination with Interactive Question-Knowledge Alignment. _Shuo Zhang et al._ arXiv 2023. [[Paper](https://arxiv.org/pdf/2305.13669.pdf)]
 1.   StructGPT: A general framework for Large Language Model to Reason on Structured Data. _Jinhao Jiang et al._ arXiv 2023. [[Paper](https://arxiv.org/pdf/2305.09645.pdf)]
 
+### Domain Factuality Enhanced LLMs
+
+#### Healthcare Domain-enhanced LLMs
+
+1.   CohortGPT: An Enhanced GPT for Participant Recruitment in Clinical Study. _Guan, Zihan et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2307.11346.pdf)]
+2.   ChatDoctor: A Medical Chat Model Fine-Tuned on a Large Language Model Meta-AI (LLaMA) Using Medical Domain Knowledge. _Li, Yunxiang et al._ Cureus 2023. [[paper](https://arxiv.org/pdf/2303.14070.pdf)]
+3.   Deid-GPT: Zero-Shot Medical Text De-Identification By Gpt-4. _Liu, Zhengliang et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2303.11032.pdf)]
+4.   Biomedlm: A Domain-Specific Large Language Model for Biomedical Text. _Venigalla, A et al._  [[blog](https://crfm.stanford.edu/2022/12/15/biomedlm.html)] [[model](https://huggingface.co/stanford-crfm/BioMedLM)]
+5.   MedChatZH: A Better Medical Adviser Learns from Better Instructions. _Tan, Yang et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2309.01114.pdf)]
+6.   BioGPT: Generative Pre-Trained Transformer for Biomedical Text Generation and Mining. _Luo, Renqian et al._ Briefings in Bioinformatics 2022. [[paper](https://arxiv.org/pdf/2210.10341.pdf)]
+7.   Genegpt: Augmenting Large Language Models with Domain Tools for Improved Access to Biomedical Information. _Jin, Qiao et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2304.09667.pdf)]
+8.   Almanac: Retrieval-Augmented Language Models for Clinical Medicine. _Hiesinger, William et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2303.01229.pdf)]
+9.   MolXPT: Wrapping Molecules with Text for Generative Pre-training. _Liu, Zequn et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2305.10688.pdf)]
+10.   HuatuoGPT, Towards Taming Language Model to Be a Doctor. _Zhang, Hongbo et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2305.15075.pdf)]
+11.   Zhongjing: Enhancing the Chinese Medical Capabilities of Large Language Model through Expert Feedback and Real-world Multi-turn Dialogue. _Yang, Songhua et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2308.03549.pdf)]
+12.   Augmenting Black-box LLMs with Medical Textbooks for Clinical Question Answering. _Wang, Yubo et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2309.02233.pdf)]
+13.   DISC-MedLLM: Bridging General Large Language Models and Real-World Medical Consultation. _Bao, Zhijie et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2308.14346.pdf)]
+
+#### Legal Domain enhanced LLMs
+
+1.   Brief Report on LawGPT 1.0: A Virtual Legal Assistant Based on GPT-3. _Nguyen, Ha-Thanh et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2302.05729.pdf)]
+2.   Chatlaw: Open-Source Legal Large Language Model with Integrated External Knowledge Bases. _Cui, Jiaxi et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2306.16092.pdf)]
+3.   Explaining Legal Concepts with Augmented Large Language Models (GPT-4). _Savelka, Jaromir et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2306.09525.pdf)]
+4.   Lawyer LLaMA Technical Report. _Huang, Quzhe et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2305.15062.pdf)]
+
+#### Finance Domain-enhanced LLMs
+
+1.   EcomGPT: Instruction-tuning Large Language Model with Chain-of-Task Tasks for E-commerce. _Li, Yangning et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2308.06966.pdf)]
+2.   BloombergGPT: A Large Language Model for Finance. _Shijie Wu et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2303.17564.pdf)]
+
+#### Other Domain-Enhanced LLMs
+
+##### Geoscience and  Environment domain-enhanced LLMs
+
+1.   Learning A Foundation Language Model for Geoscience Knowledge Understanding and Utilization. _Deng, Cheng et al_. arXiv 2023. [[paper](https://arxiv.org/pdf/2306.05064.pdf)]
+2.   HouYi: An Open-Source Large Language Model Specially Designed for Renewable Energy and Carbon Neutrality Field. _Bai, Mingliang et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2308.01414.pdf)]
+
+##### Education Domain-enhanced LLMs
+
+1.   GrammarGPT: Exploring Open-Source LLMs for Native Chinese Grammatical Error Correction with Supervised Fine-Tuning. _Fan, Yaxin et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2307.13923.pdf)]
+
+##### Food Domain-enhanced LLMs
+
+1.   FoodGPT: A Large Language Model in Food Testing Domain with Incremental Pre-training and Knowledge Graph Prompt. _Qi, Zhixiao et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2308.10173.pdf)]
+
+##### Home renovation domain-enhanced LLMs
+
+1.   ChatHome: Development and Evaluation of a Domain-Specific Language Model for Home Renovation. _Wen, Cheng et al._ arXiv 2023. [[paper](https://arxiv.org/pdf/2307.15290.pdf)]
+
