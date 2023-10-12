@@ -188,7 +188,7 @@ Models. _Globerson et al._ 2023. [[Paper](https://arxiv.org/abs/2304.14767)]
 
 ##### Continual Pretraining
 
-1.   Factuality Enhanced Language Models for Open-Ended Text Generation. _Lee, Nayeon et al._ NIPS 2022. [[Paper](https://proceedings.neurips.cc/paper_files/paper/2022/file/df438caa36714f69277daa92d608dd63-Paper-Conference.pdf)]
+1.   Factuality Enhanced Language Models for Open-Ended Text Generation. _Lee, Nayeon et al._ NeurIPS 2022. [[Paper](https://proceedings.neurips.cc/paper_files/paper/2022/file/df438caa36714f69277daa92d608dd63-Paper-Conference.pdf)]
 
 #### Supervised Finetuning
 
@@ -202,7 +202,7 @@ Models. _Globerson et al._ 2023. [[Paper](https://arxiv.org/abs/2304.14767)]
 
 1.   Editing Large Language Models: Problems, Methods, and Opportunities. _Yunzhi Yao et al._ arXiv 2023. [[Paper](https://arxiv.org/pdf/2305.13172.pdf)]
 1.   Knowledge Neurons in Pretrained Transformers. _Dai, Damai et al._ ACL 2022. [[Paper](https://aclanthology.org/2022.acl-long.581.pdf)]
-1.   Locating and Editing Factual Associations in GPT. _Kevin Meng et al._ NIPS 2022. [[Paper](https://openreview.net/forum?id=-h6WAS6eE4)]
+1.   Locating and Editing Factual Associations in GPT. _Kevin Meng et al._ NeurIPS 2022. [[Paper](https://openreview.net/forum?id=-h6WAS6eE4)]
 1.   Editing Factual Knowledge in Language Models. _De Cao, Nicola et al._ EMNLP 2021. [[Paper](https://aclanthology.org/2021.emnlp-main.522.pdf)]
 1.   Fast Model Editing at Scale. _Eric Mitchell et al._ ICLR 2022. [[Paper](https://openreview.net/forum?id=0DcZxeWfOPt)]
 1.   Inference-Time Intervention: Eliciting Truthful Answers from a Language Model. _Kenneth Li et al._ arXiv 2023. [[Paper](https://arxiv.org/pdf/2306.03341.pdf)]
@@ -221,7 +221,7 @@ Models. _Globerson et al._ 2023. [[Paper](https://arxiv.org/abs/2304.14767)]
 
 #### Decoding
 
-1.   Factuality Enhanced Language Models for Open-Ended Text Generation. _Lee, Nayeon et al._ NIPS 2022. [[Paper]([df438caa36714f69277daa92d608dd63-Paper-Conference.pdf (neurips.cc)](https://proceedings.neurips.cc/paper_files/paper/2022/file/df438caa36714f69277daa92d608dd63-Paper-Conference.pdf))]
+1.   Factuality Enhanced Language Models for Open-Ended Text Generation. _Lee, Nayeon et al._ NeurIPS 2022. [[Paper](https://proceedings.neurips.cc/paper_files/paper/2022/file/df438caa36714f69277daa92d608dd63-Paper-Conference.pdf)]
 1.   DoLa: Decoding by Contrasting Layers Improves Factuality in Large Language Models. _Chuang, Yung-Sung et al._ arXiv 2023. [[Paper](https://arxiv.org/pdf/2309.03883.pdf)]
 
  ### On Retrieval-Augmented Generation
@@ -263,7 +263,7 @@ Models. _Globerson et al._ 2023. [[Paper](https://arxiv.org/abs/2304.14767)]
 
 #### Retrieval on External Memory
 
-1.   Decoupled Context Processing for Context Augmented Language Modeling. _Zonglin Li et al._ NIPS 2022. [[Paper](https://proceedings.neurips.cc/paper_files/paper/2022/file/882d801fb1017f955547d5a816ade0fc-Paper-Conference.pdf)]
+1.   Decoupled Context Processing for Context Augmented Language Modeling. _Zonglin Li et al._ NeurIPS 2022. [[Paper](https://proceedings.neurips.cc/paper_files/paper/2022/file/882d801fb1017f955547d5a816ade0fc-Paper-Conference.pdf)]
 1.   G-MAP: General Memory-Augmented Pre-trained Language Model for Domain Tasks. _Zhongwei Wan et al._ ICML 2019. [[Paper](http://proceedings.mlr.press/v97/houlsby19a/houlsby19a.pdf)]
 1.    Parameter-Efficient Transfer Learning for NLP. _Neil Houlsby et al._ EMNLP 2022. [[Paper](https://aclanthology.org/2022.emnlp-main.441.pdf)]
 1.   KALA: Knowledge-Augmented Language Model Adaptation. _Kang, Minki et al._ NAACL 2022. [[Paper](https://aclanthology.org/2022.naacl-main.379.pdf)]
