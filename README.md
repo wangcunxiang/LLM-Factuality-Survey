@@ -1,15 +1,23 @@
 # LLM-Factuality-Survey
-The repository for the survey paper "**Survey on Factuality in Large Language Models: Knowledge, Retrieval and Domain-Specificity**"
+The repository for the survey paper "[**Survey on Factuality in Large Language Models: Knowledge, Retrieval and Domain-Specificity**](https://arxiv.org/pdf/2305.12421.pdf)"
 
 
 ![](logo.jpg)
 
-[[Tables](https://github.com/wangcunxiang/LLM-Factuality-Survey#tables)]
-[[Paper list](https://github.com/wangcunxiang/LLM-Factuality-Survey#paper-list)]
+<p align="center">
+Cunxiang Wang<sup>1,7</sup>*, Xiaoze Liu<sup>2</sup>*, Yuanhao Yue<sup>3</sup>*, Xiangru Tang<sup>4</sup>, Tianhang Zhang<sup>5</sup>, Cheng Jiayang<sup>6</sup>, Yunzhi Yao<sup>7</sup>, Wenyang Gao<sup>1,7</sup>,<br>Xuming Hu<sup>8</sup>, Zehan Qi<sup>8</sup>, Yidong Wang<sup>1</sup>, Linyi Yang<sup>1</sup>, Jindong Wang<sup>9</sup>, Xing Xie<sup>9</sup>, Zheng Zhang<sup>10</sup> and Yue Zhang<sup>1</sup>.
+</p> 
+
+<p align="center">
+1. School of Engineering, Westlake University; 2. Purdue University; 3. Fudan Univerisity; 4. Yale University; 5. Shanghai Jiao Tong University; 6. HKUST; 7. Zhejiang University; 8. Tsinghua University; 9. Microsoft Research; 10. NYU Shanghai University;<br>
+ (*: Equal Contribution; Correspondence to: Yue Zhang)
+</p> 
 
 
 ![](survey-tree.jpg)
 
+
+**NOTE:** As real-time updates may not be feasible for the arXiv paper. For the most recent developments and modifications, please consult this repository. We greatly appreciate and welcome pull requests or issues to enhance the quality of this survey. All contributions will be list in the <a href="#acknowledgements">acknowledgements</a> section.
 # Paper List
 
 ## Analysis of Factuality
@@ -470,4 +478,19 @@ Models. _Globerson et al._ 2023. [[Paper](https://arxiv.org/abs/2304.14767)]
 | [Qi et al, 2023](https://arxiv.org/abs/2308.10173) | Food | Chinese-LLaMA2-13B | QA | | ✔️ | | | ✔️ |
 | [Wen et al, 2023](https://arxiv.org/abs/2307.15290) | Home Renovation | Baichuan-13B | | C-Eval, CMMLU, EvalHome | | ✔️ | | |
 
+## Reference
+If you find this project useful in your research or work, please consider citing it:
 
+```
+@misc{wang2023survey,
+      title={Survey on Factuality in Large Language Models: Knowledge, Retrieval and Domain-Specificity}, 
+      author={Cunxiang Wang and Xiaoze Liu and Yuanhao Yue and Xiangru Tang and Tianhang Zhang and Cheng Jiayang and Yunzhi Yao and Wenyang Gao and Xuming Hu and Zehan Qi and Yidong Wang and Linyi Yang and Jindong Wang and Xing Xie and Zheng Zhang and Yue Zhang},
+      year={2023},
+      eprint={2310.07521},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
+
+## Acknowledgements
+1. CHEN Liang ([ChanLiang](https://github.com/ChanLiang)) for [PR#1](https://github.com/wangcunxiang/LLM-Factuality-Survey/pull/1).
