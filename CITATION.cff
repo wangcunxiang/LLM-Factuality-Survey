@@ -1,0 +1,8 @@
+@misc{wang2023survey,
+      title={Survey on Factuality in Large Language Models: Knowledge, Retrieval and Domain-Specificity}, 
+      author={Cunxiang Wang and Xiaoze Liu and Yuanhao Yue and Xiangru Tang and Tianhang Zhang and Cheng Jiayang and Yunzhi Yao and Wenyang Gao and Xuming Hu and Zehan Qi and Yidong Wang and Linyi Yang and Jindong Wang and Xing Xie and Zheng Zhang and Yue Zhang},
+      year={2023},
+      eprint={2310.07521},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
