@@ -37,6 +37,4 @@ preferred-citation:
     given-names: "Yue"
   title: "Survey on Factuality in Large Language Models: Knowledge, Retrieval and Domain-Specificity"
   year: 2023
-  eprint: "2310.07521"
-  archivePrefix: "arXiv"
-  primaryClass: "cs.CL"
+  journal="arXiv preprint arXiv:2310.07521"
