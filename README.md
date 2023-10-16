@@ -288,6 +288,7 @@ Models. _Globerson et al._ 2023. [[Paper](https://arxiv.org/abs/2304.14767)]
 
 1.   Mitigating Language Model Hallucination with Interactive Question-Knowledge Alignment. _Shuo Zhang et al._ arXiv 2023. [[Paper](https://arxiv.org/pdf/2305.13669.pdf)]
 1.   StructGPT: A general framework for Large Language Model to Reason on Structured Data. _Jinhao Jiang et al._ arXiv 2023. [[Paper](https://arxiv.org/pdf/2305.09645.pdf)]
+1.   Knowledge-Augmented Language Model Prompting for Zero-Shot Knowledge Graph Question Answering. _Jinheon Baek et al._ arXiv 2023. [[Paper](https://arxiv.org/pdf/2306.04136.pdf)]
 
 ### Domain Factuality Enhanced LLMs
 
