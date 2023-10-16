@@ -495,3 +495,8 @@ If you find this project useful in your research or work, please consider citing
 
 ## Acknowledgements
 1. CHEN Liang ([ChanLiang](https://github.com/ChanLiang)) for [PR#1](https://github.com/wangcunxiang/LLM-Factuality-Survey/pull/1).
+
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=wangcunxiang/LLM-Factuality-Survey&type=Date)](https://star-history.com/#wangcunxiang/LLM-Factuality-Survey&Date)
