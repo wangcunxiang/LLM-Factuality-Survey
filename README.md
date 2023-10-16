@@ -9,7 +9,7 @@ Cunxiang Wang<sup>1,7</sup>*, Xiaoze Liu<sup>2</sup>*, Yuanhao Yue<sup>3</sup>*,
 </p> 
 
 <p align="center">
-1. School of Engineering, Westlake University; 2. Purdue University; 3. Fudan Univerisity; 4. Yale University; 5. Shanghai Jiao Tong University; 6. HKUST; 7. Zhejiang University; 8. Tsinghua University; 9. Microsoft Research; 10. NYU Shanghai University;<br>
+1. School of Engineering, Westlake University; 2. Purdue University; 3. Fudan University; 4. Yale University; 5. Shanghai Jiao Tong University; 6. HKUST; 7. Zhejiang University; 8. Tsinghua University; 9. Microsoft Research; 10. NYU Shanghai University;<br>
  (*: Equal Contribution; Correspondence to: Yue Zhang)
 </p> 
 
