@@ -496,6 +496,7 @@ If you find this project useful in your research or work, please consider citing
 
 ## Acknowledgements
 1. CHEN Liang ([ChanLiang](https://github.com/ChanLiang)) for [PR#1](https://github.com/wangcunxiang/LLM-Factuality-Survey/pull/1).
+2. JinheonBaek ([JinheonBaek](https://github.com/JinheonBaek)) for [PR#2](https://github.com/wangcunxiang/LLM-Factuality-Survey/pull/2) and [PR#3](https://github.com/wangcunxiang/LLM-Factuality-Survey/pull/3)
 
 
 ## Star History
