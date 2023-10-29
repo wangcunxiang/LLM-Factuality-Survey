@@ -5,11 +5,11 @@ The repository for the survey paper "[**Survey on Factuality in Large Language M
 ![](logo.jpg)
 
 <p align="center">
-Cunxiang Wang<sup>1,7</sup>*, Xiaoze Liu<sup>2</sup>*, Yuanhao Yue<sup>3</sup>*, Xiangru Tang<sup>4</sup>, Tianhang Zhang<sup>5</sup>, Cheng Jiayang<sup>6</sup>, Yunzhi Yao<sup>7</sup>, Wenyang Gao<sup>1,7</sup>, Xuming Hu<sup>8</sup>, Zehan Qi<sup>8</sup>, Yidong Wang<sup>1</sup>, Linyi Yang<sup>1</sup>, Jindong Wang<sup>9</sup>, Xing Xie<sup>9</sup>, Zheng Zhang<sup>10</sup> and Yue Zhang<sup>1</sup>.
+Cunxiang Wang<sup>1,7</sup>*, Xiaoze Liu<sup>2</sup>*, Yuanhao Yue<sup>3</sup>*, Qipeng Guo<sup>4</sup>, Xiangkun Hu<sup>4</sup>, Xiangru Tang<sup>5</sup>, Tianhang Zhang<sup>6</sup>, Cheng Jiayang<sup>7</sup>, Yunzhi Yao<sup>8</sup>, Wenyang Gao<sup>1,8</sup>, Xuming Hu<sup>9</sup>, Zehan Qi<sup>9</sup>, Yidong Wang<sup>1</sup>, Linyi Yang<sup>1</sup>, Jindong Wang<sup>10</sup>, Xing Xie<sup>10</sup>, Zheng Zhang<sup>4,11</sup> and Yue Zhang<sup>1</sup>.
 </p> 
 
 <p align="center">
-1. School of Engineering, Westlake University; 2. Purdue University; 3. Fudan University; 4. Yale University; 5. Shanghai Jiao Tong University; 6. HKUST; 7. Zhejiang University; 8. Tsinghua University; 9. Microsoft Research; 10. NYU Shanghai University;<br>
+1. School of Engineering, Westlake University; 2. Purdue University; 3. Fudan University; 4. Amazon AWS AI Lab; 5. Yale University; 6. Shanghai Jiao Tong University; 7. HKUST; 8. Zhejiang University; 9. Tsinghua University; 10. Microsoft Research; 11. NYU Shanghai;<br>
  (*: Equal Contribution; Correspondence to: Yue Zhang)
 </p> 
 
