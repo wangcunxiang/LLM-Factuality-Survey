@@ -261,6 +261,7 @@ Models. _Globerson et al._ 2023. [[Paper](https://arxiv.org/abs/2304.14767)]
 
 1.   Check Your Facts and Try Again: Improving Large Language Models with External Knowledge and Automated Feedback. _Baolin Peng et al._ arXiv 2023. [[Paper](https://arxiv.org/pdf/2302.12813.pdf)]
 1.   Knowledge-Augmented Language Model Verification. _Jinheon Baek et al._ EMNLP 2023. [[Paper](https://arxiv.org/abs/2310.12836)]
+1.   WikiChat: Stopping the Hallucination of Large Language Model Chatbots by Few-Shot Grounding on Wikipedia. _Semnani et al._ EMNLP 2023 findings. [[Paper](https://aclanthology.org/2023.findings-emnlp.157/)] [[GitHub]](https://github.com/stanford-oval/WikiChat) [[Demo]](https://wikichat.genie.stanford.edu/)
 
 ##### SFT-based
 
