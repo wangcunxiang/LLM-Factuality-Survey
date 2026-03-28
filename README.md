@@ -40,6 +40,7 @@ Models. _Globerson et al._ 2023. [[Paper](https://arxiv.org/abs/2304.14767)]
 1.  A Survey on In-context Learning. _Dong et al._ 2023. [[Paper](https://arxiv.org/abs/2301.00234)]
 1.  Language Models (Mostly) Know What They Know. _Kadavath et al._ 2022. [[Paper](https://arxiv.org/abs/2207.05221)]
 1.   The internal state of an llm knows when its lying. _Azaria et al._ 2023. [[Paper](https://arxiv.org/abs/2304.13734)]
+1.   DRIFT: Detecting Representational Inconsistencies for Factual Truthfulness. _Bhatnagar et al._ arXiv 2025. [[Paper](https://arxiv.org/abs/2601.14210)]
 
 
 ### Parametric Knowledge vs Retrieved Knowledge
@@ -173,6 +174,7 @@ Models. _Globerson et al._ 2023. [[Paper](https://arxiv.org/abs/2304.14767)]
 1. Generate rather than retrieve: Large language models are strong context generators. _Yu et al._ 2023. [[Paper](https://arxiv.org/abs/2209.10063)]
 1. Beyond Factuality: A Comprehensive Evaluation of Large Language Models as Knowledge Generators. _Chen et al._ 2023. [[Paper](https://arxiv.org/abs/2310.07289)]
 1. Teaching language models to support answers with verified quotes. _Menick et al._ 2022. [[Paper](https://arxiv.org/abs/2203.11147)]
+1.   DRIFT: Detecting Representational Inconsistencies for Factual Truthfulness. _Bhatnagar et al._ arXiv 2025. [[Paper](https://arxiv.org/abs/2601.14210)]
 
 ### Evaluating Domain-specific Factuality
 
