@@ -64,6 +64,8 @@ Models. _Globerson et al._ 2023. [[Paper](https://arxiv.org/abs/2304.14767)]
 1. Rich Knowledge Sources Bring Complex Knowledge Conflicts: Recalibrating Models to Reflect Conflicting Evidence. _Chen et al._ 2022. [[Paper](https://arxiv.org/abs/2210.13701)]
 1. Adaptive Chameleon or Stubborn Sloth: Unraveling the Behavior of Large Language Models in Knowledge Clashes. _Xie et al._ 2023. [[Paper](https://arxiv.org/abs/2305.13300)]
 1. Large Language Models with Controllable Working Memory. _Li et al._ 2023. [[Paper](https://doi.org/10.18653/v1/2023.findings-acl.112)]
+1. ParamMute: Suppressing Knowledge-Critical FFNs for Faithful Retrieval-Augmented Generation. _Huang et al._ NeurIPS 2025. [[Paper](https://arxiv.org/abs/2502.15543)] [[GitHub]](https://github.com/OpenBMB/ParamMute)
+1. SPARK: Adaptive Parametric Knowledge Participation for Faithful Retrieval-Augmented Generation. _Li et al._ 2026. [[Paper](https://arxiv.org/abs/2606.27786)] [[GitHub]](https://github.com/OpenBMB/SPARK)
 
 ## Causes of Factual Errors
 
